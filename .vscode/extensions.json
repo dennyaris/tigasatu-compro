@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.unocss",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.path-intellisense"
+  ],
+}
