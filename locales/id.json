@@ -1,0 +1,37 @@
+{
+  "welcome": "Selamat datang",
+  "home": {
+    "title": "Perusahaan Pemasok Peralatan Medis"
+  },
+  "about": {
+    "title": "Tentang Kami"
+  },
+  "menu": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "contact": "Hubungi",
+    "career": "Karir",
+    "privacy_policy": "Kebijakan Privasi",
+    "terms_conditions": "Syarat & Ketentuan"
+  },
+  "footer": {
+    "also_here": {
+      "title": "Temukan Kami Juga di"
+    },
+    "cta": {
+      "title": "Jadilah Bagian dari Revolusi Kesehatan",
+      "subtitle": "Bergabunglah bersama kami dalam mengubah sektor kesehatan di Indonesia. Hubungi kami sekarang dan mari kita ciptakan perubahan bersama!",
+      "btnContact": "Hubungi Kami",
+      "btnCareer": "Jelajahi Lowongan"
+    },
+    "connect_widget": {
+      "title": "Terhubung dengan Kami"
+    },
+    "company_widget": {
+      "title": "Perusahaan",
+      "about": "Tentang Kami",
+      "career": "Karir",
+      "contact": "Hubungi Kami"
+    }
+  }
+}

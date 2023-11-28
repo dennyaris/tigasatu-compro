@@ -1,0 +1,37 @@
+{
+  "welcome": "Welcome",
+  "home": {
+    "title": "Medical Supplier Company"
+  },
+  "about": {
+    "title": "About Us"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "career": "Career",
+    "privacy_policy": "Privacy Policy",
+    "terms_conditions": "Terms & Conditions"
+  },
+  "footer": {
+    "also_here": {
+      "title": "We're Also Here"
+    },
+    "cta": {
+      "title": "Be Part of the Health Revolution",
+      "subtitle": "Join us in transforming Indonesia's healthcare. Reach out now and let's make a difference together!",
+      "btnContact": "Contact Us",
+      "btnCareer": "Explore Vacancies"
+    },
+    "connect_widget": {
+      "title": "Connect with Us"
+    },
+    "company_widget": {
+      "title": "Company",
+      "about": "About Us",
+      "career": "Career",
+      "contact": "Contact Us"
+    }
+  }
+}
