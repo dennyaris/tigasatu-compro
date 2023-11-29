@@ -1,4 +1,3 @@
-import type contactVue from '~/pages/contact.vue';
 <script setup lang="ts">
 const props = defineProps({
   reverseDirection: {
@@ -58,11 +57,12 @@ const shuffleBrandsDoubleIt = computed(() => {
   <div>
     <Swiper
       :modules="[SwiperAutoplay, SwiperFreeMode]"
-      :slides-per-view="2"
+      :slides-per-view="'auto'"
       :free-mode="true"
       :loop="true"
       :speed="8000"
       :no-swiping="true"
+      :space-between="16"
       :prevent-interaction-on-transition="false"
       :autoplay="{
         delay: 1,
@@ -70,26 +70,9 @@ const shuffleBrandsDoubleIt = computed(() => {
         pauseOnMouseEnter: false,
         reverseDirection: props.reverseDirection,
       }"
-      :breakpoints="{
-        640: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 4,
-        },
-        1024: {
-          slidesPerView: 5,
-        },
-        1280: {
-          slidesPerView: 6,
-        },
-        1536: {
-          slidesPerView: 7,
-        },
-      }"
     >
-      <SwiperSlide v-for="(b, i) in shuffleBrandsDoubleIt" :key="i">
-        <div class="bg-white mx-4 h-20 aspect-[2/1] flex items-center justify-center rounded-2xl ring-1 ring-blue-light shadow px-3 py-2">
+      <SwiperSlide v-for="(b, i) in shuffleBrandsDoubleIt" :key="i" class="w-auto">
+        <div class="bg-white h-20 aspect-[2/1] flex items-center justify-center rounded-2xl ring-1 ring-blue-light shadow px-3 py-2">
           <img class="object-contain max-w-full max-h-full" :src="b.image" :alt="b.title">
         </div>
       </SwiperSlide>

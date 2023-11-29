@@ -61,7 +61,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
         </div>
         <div class="flex gap-6 lg:gap-20">
           <div>
-            <div class="text-lg font-semibold tracking-normal mb-4">
+            <div class="text-lg font-bold tracking-normal mb-4">
               {{ $t('footer.company_widget.title') }}
             </div>
             <div class="flex flex-col gap-3">
@@ -74,11 +74,14 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
               <NuxtLink :to="localePath('/career', locale)">
                 {{ $t('footer.company_widget.career') }}
               </NuxtLink>
+              <NuxtLink :to="localePath('/', locale)">
+                Blog
+              </NuxtLink>
             </div>
           </div>
           <div class="max-w-md">
             <div class="widget">
-              <div class="text-lg font-semibold tracking-normal mb-4">
+              <div class="text-lg font-bold tracking-normal mb-4">
                 {{ $t('footer.connect_widget.title') }}
               </div>
               <div class="flex flex-col gap-4">
