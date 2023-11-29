@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       }
     }
   },
-  debug: process.env.NODE_ENV !== 'production',
+  // debug: process.env.NODE_ENV !== 'production',
+  debug: false,
   runtimeConfig: {
     public: {
       baseURL: process.env.BASE_URL || 'http://localhost:3000'

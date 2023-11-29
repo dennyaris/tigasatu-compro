@@ -5,7 +5,14 @@ useHead({
 })
 </script>
 <template>
-  <div class="py-20">
-    ABOUT US PAGE
+  <div class="py-80">
+    <TestDisclosure />
   </div>
 </template>
+<style>
+.swiper > .swiper-wrapper{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition-timing-function : linear !important;
+}
+</style>

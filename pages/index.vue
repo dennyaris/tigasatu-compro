@@ -109,6 +109,12 @@ const setThumbsSwiper = (swiper) => {
   </section>
   <section class="bg-blue-50 py-20">
     <div class="container">
+      <SectionSlideBrand :reverse-direction="false" />
+      <SectionSlideBrand :reverse-direction="true" />
+    </div>
+  </section>
+  <section class="bg-blue-50 py-20">
+    <div class="container">
       <h2 class="text-4xl font-black !leading-none text-center">
         Our Solution Specialization Focus
       </h2>
@@ -174,7 +180,7 @@ const setThumbsSwiper = (swiper) => {
       </div>
     </div>
   </section>
-  <section class="pb-16 md:pb-8 pt-20">
+  <section class="pb-20 lg:pb-48 pt-20">
     <div class="container">
       <h2 class="text-4xl font-black !leading-none text-left mb-8">
         Our Client Testimonials

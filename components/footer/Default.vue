@@ -7,32 +7,34 @@ const socialIconClass = 'w-8 h-8 text-secondary'
 const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-full text-center sm:text-left'
 </script>
 <template>
-  <footer class="relative">
-    <div class="container overflow-hidden lg:translate-y-1/2 flex justify-between bg-slate-100 lg:h-60 rounded-2xl">
-      <div class="flex items-center py-12 px-8">
-        <div class="grow">
-          <h2 class="text-xl md:text-3xl font-semibold mb-2">
-            {{ $t('footer.cta.title') }}
-          </h2>
-          <p class="text-base md:text-lg max-w-3xl !leading-snug tracking-wide">
-            {{ $t('footer.cta.subtitle') }}
-          </p>
-          <div class="flex flex-col sm:flex-row gap-3 lg:gap-6 mt-6">
-            <NuxtLink :class="btnCTAClass" class="text-white bg-secondary" :to="localePath('/contact', locale)">
-              {{ $t('footer.cta.btnContact') }}
-            </NuxtLink>
-            <NuxtLink :class="btnCTAClass" class="text-secondary" :to="localePath('/career', locale)">
-              {{ $t('footer.cta.btnCareer') }}
-            </NuxtLink>
+  <footer class="relative bg-primary">
+    <div class="widget text-white tracking-wide lg:pt-44">
+      <div class="static lg:absolute top-0 left-0 w-full">
+        <div class="container lg:-translate-y-1/2 text-black overflow-hidden flex justify-between bg-slate-100 lg:h-60 lg:rounded-2xl">
+          <div class="flex items-center py-12 px-8">
+            <div class="grow">
+              <h2 class="text-xl md:text-3xl font-semibold mb-2">
+                {{ $t('footer.cta.title') }}
+              </h2>
+              <p class="text-base md:text-lg max-w-3xl !leading-snug tracking-wide">
+                {{ $t('footer.cta.subtitle') }}
+              </p>
+              <div class="flex flex-col sm:flex-row gap-3 lg:gap-6 mt-6">
+                <NuxtLink :class="btnCTAClass" class="text-white bg-secondary" :to="localePath('/contact', locale)">
+                  {{ $t('footer.cta.btnContact') }}
+                </NuxtLink>
+                <NuxtLink :class="btnCTAClass" class="text-secondary" :to="localePath('/career', locale)">
+                  {{ $t('footer.cta.btnCareer') }}
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+          <div class="hidden sm:block shrink-0">
+            <img class="h-full h-auto" src="/images/footer-doctor-cta.png" alt="Doctor Footer CTA">
           </div>
         </div>
       </div>
-      <div class="hidden sm:block shrink-0">
-        <img class="h-full h-auto" src="/images/footer-doctor-cta.png" alt="Doctor Footer CTA">
-      </div>
-    </div>
-    <div class="widget bg-primary text-white tracking-wide pb-14 pt-14 lg:pt-44">
-      <div class="container flex gap-y-14 flex-col lg:flex-row justify-between">
+      <div class="container pb-14 pt-14 lg:pt-0 flex gap-y-14 flex-col lg:flex-row justify-between">
         <div class="flex flex-col gap-4 lg:max-w-md">
           <img class="h-8 mb-3 snow-white object-contain w-fit" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
           <p class="font-semibold text-lg">
@@ -125,7 +127,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
         </div>
       </div>
     </div>
-    <div class="social py-2 lg:py-4">
+    <div class="social bg-white py-2 lg:py-4">
       <div class="container flex justify-between items-center">
         <div>
           <LangSwitcher />
