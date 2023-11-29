@@ -7,18 +7,22 @@ import {
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const menuItemClass = 'font-semibold tracking-wide hover:text-secondary'
-const mobileMenuItemClass = 'flex items-center gap-1.5 group'
+const mobileMenuItemClass = 'flex items-center gap-1.5 group rounded-lg border-2 border-blue-light px-2 py-2'
 const mobileMenuItemIconClass = 'w-8 h-8 group-hover:text-secondary'
 const mobileMenuItemTextClass = 'text-lg font-medium tracking-wide group-hover:text-primary group-hover:font-semibold'
 const route = useRoute()
 
 const isOpen = ref(false)
+const isSolutionOpen = ref(false)
 
 const toggleMobileMenu = () => {
   isOpen.value = !isOpen.value
 }
 const setIsOpen = (value: boolean) => {
   isOpen.value = value
+}
+const handleClick = () => {
+  isOpen.value = false
 }
 </script>
 <template>
@@ -29,12 +33,13 @@ const setIsOpen = (value: boolean) => {
           <img class="h-8 w-auto" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
         </NuxtLink>
       </div>
-      <ul class="hidden lg:flex items-center justify-center gap-x-6">
+      <ul class="hidden lg:flex items-center justify-center gap-x-8">
         <li>
           <NuxtLink :class="menuItemClass" :to="localePath('/', locale)">
             {{ $t('menu.home') }}
           </NuxtLink>
         </li>
+        <MenuSolution />
         <li>
           <NuxtLink :class="menuItemClass" :to="localePath('/about', locale)">
             {{ $t('menu.about') }}
@@ -86,19 +91,48 @@ const setIsOpen = (value: boolean) => {
         </div>
         <div class="container mx-auto py-3">
           <nav class="space-y-3">
-            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/', locale)">
+            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/', locale)" @click="handleClick">
               <span :class="mobileMenuItemIconClass" class="i-ph-buildings-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.home') }}</span>
             </NuxtLink>
-            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/about', locale)">
+            <div :class="mobileMenuItemClass" class="flex-col">
+              <button class="w-full flex" @click.prevent="isSolutionOpen = !isSolutionOpen">
+                <div class="grow flex items-center gap-1.5">
+                  <span :class="mobileMenuItemIconClass" class="i-ph-flask-duotone" />
+                  <span :class="mobileMenuItemTextClass">{{ $t('menu.solution') }}</span>
+                </div>
+                <i
+                  :class="!isSolutionOpen ? 'duration-200' : 'duration-200 rotate-180'"
+                  class="inline-block -mr-1 ml-1 h-8 w-8 i-mdi-chevron-down text-primary"
+                  aria-hidden="true"
+                />
+              </button>
+              <div v-show="isSolutionOpen" class="w-full pl-4 pt-3">
+                <div class="flex flex-col gap-y-4">
+                  <NuxtLink :to="localePath('/solution/cardio', locale)" class="flex gap-2" @click="handleClick">
+                    <img class="w-8 h-8 shrink-0" src="/images/solution-cardio.png" alt="Cardio Solution">
+                    <span class="text-lg font-semibold tracking-wide">Cardio Solution</span>
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/solution/diabetic', locale)" class="flex gap-2" @click="handleClick">
+                    <img class="w-8 h-8 shrink-0" src="/images/solution-diabetic.png" alt="Cardio Solution">
+                    <span class="text-lg font-semibold tracking-wide">Diabetic Solution</span>
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/solution/dental', locale)" class="flex gap-2" @click="handleClick">
+                    <img class="w-8 h-8 shrink-0" src="/images/solution-dental.png" alt="Cardio Solution">
+                    <span class="text-lg font-semibold tracking-wide">Dental Solution</span>
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/about', locale)" @click="handleClick">
               <span :class="mobileMenuItemIconClass" class="i-ph-shooting-star-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.about') }}</span>
             </NuxtLink>
-            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/about', locale)">
+            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/contact', locale)" @click="handleClick">
               <span :class="mobileMenuItemIconClass" class="i-ph-globe-hemisphere-east-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.contact') }}</span>
             </NuxtLink>
-            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/about', locale)">
+            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/career', locale)" @click="handleClick">
               <span :class="mobileMenuItemIconClass" class="i-ph-briefcase-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.career') }}</span>
             </NuxtLink>

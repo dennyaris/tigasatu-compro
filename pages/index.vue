@@ -109,6 +109,9 @@ const setThumbsSwiper = (swiper) => {
   </section>
   <section class="bg-blue-50 py-20">
     <div class="container">
+      <h2 class="font-black text-4xl text-center !leading-none mb-8">
+        {{ $t('home.brands.title') }}
+      </h2>
       <SectionSlideBrand :reverse-direction="false" />
       <SectionSlideBrand :reverse-direction="true" />
     </div>

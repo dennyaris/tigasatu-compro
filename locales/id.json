@@ -1,7 +1,10 @@
 {
   "welcome": "Selamat datang",
   "home": {
-    "title": "Perusahaan Pemasok Peralatan Medis"
+    "title": "Perusahaan Pemasok Peralatan Medis",
+    "brands": {
+      "title": "Jelajahi Beragam Merek yang Kami Tawarkan"
+    }
   },
   "about": {
     "title": "Tentang Kami"
@@ -11,6 +14,7 @@
     "about": "Tentang",
     "contact": "Hubungi",
     "career": "Karir",
+    "solution": "Produk",
     "privacy_policy": "Kebijakan Privasi",
     "terms_conditions": "Syarat & Ketentuan"
   },
