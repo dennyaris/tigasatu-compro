@@ -20,7 +20,8 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-swiper'
   ],
   i18n: {
     debug: false,
@@ -35,7 +36,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Poppins: [300, 400, 500, 600, 700]
+      Poppins: [300, 400, 500, 600, 700],
+      Inter: [600, 700]
     },
     preconnect: true,
     prefetch: true

@@ -2,9 +2,9 @@
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const copyrightLinkClass = 'hover:underline'
-const socialLinkClass = 'flex w-10 h-10'
+const socialLinkClass = 'flex items-center w-10 h-10'
 const socialIconClass = 'w-8 h-8 text-secondary'
-const btnCTAClass = 'inline-block border-2 border-secondary bg-secondary py-2 px-8 text-white rounded-full'
+const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-full text-center sm:text-left'
 </script>
 <template>
   <footer class="relative">
@@ -18,10 +18,10 @@ const btnCTAClass = 'inline-block border-2 border-secondary bg-secondary py-2 px
             {{ $t('footer.cta.subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row gap-3 lg:gap-6 mt-6">
-            <NuxtLink :class="btnCTAClass" :to="localePath('/contact', locale)">
+            <NuxtLink :class="btnCTAClass" class="text-white bg-secondary" :to="localePath('/contact', locale)">
               {{ $t('footer.cta.btnContact') }}
             </NuxtLink>
-            <NuxtLink class="inline-block border-2 border-secondary py-2 px-8 rounded-full text-secondary" :to="localePath('/career', locale)">
+            <NuxtLink :class="btnCTAClass" class="text-secondary" :to="localePath('/career', locale)">
               {{ $t('footer.cta.btnCareer') }}
             </NuxtLink>
           </div>
@@ -31,7 +31,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary bg-secondary py-2 px
         <img class="h-full h-auto" src="/images/footer-doctor-cta.png" alt="Doctor Footer CTA">
       </div>
     </div>
-    <div class="widget bg-primary text-white tracking-wide pb-14 pt-44">
+    <div class="widget bg-primary text-white tracking-wide pb-14 pt-14 lg:pt-44">
       <div class="container flex gap-y-14 flex-col lg:flex-row justify-between">
         <div class="flex flex-col gap-4 lg:max-w-md">
           <img class="h-8 mb-3 snow-white object-contain w-fit" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
@@ -57,7 +57,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary bg-secondary py-2 px
             </div>
           </div>
         </div>
-        <div class="flex gap-20">
+        <div class="flex gap-6 lg:gap-20">
           <div>
             <div class="text-lg font-semibold tracking-normal mb-4">
               {{ $t('footer.company_widget.title') }}
@@ -125,12 +125,12 @@ const btnCTAClass = 'inline-block border-2 border-secondary bg-secondary py-2 px
         </div>
       </div>
     </div>
-    <div class="social py-4">
+    <div class="social py-2 lg:py-4">
       <div class="container flex justify-between items-center">
         <div>
           <LangSwitcher />
         </div>
-        <div class="flex items-center justify-end gap-x-4">
+        <div class="grid grid-cols-3 lg:flex flex-wrap items-center justify-end gap-x-2 md:gap-x-4">
           <NuxtLink :class="socialLinkClass" rel="nofollow">
             <span :class="socialIconClass" class="i-ph-youtube-logo-duotone" />
           </NuxtLink>

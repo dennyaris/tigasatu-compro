@@ -10,9 +10,30 @@ export default defineConfig({
     width: {
       fit: 'fit-content'
     },
+    borderRadius: {
+      '4xl': '2rem',
+      '6xl': '3rem',
+      '8xl': '4rem'
+    },
+    lineHeight: {
+      extreme: '1.125'
+    },
     fontFamily: {
       sans: [
         'Poppins',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
+      ],
+      mono: [
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

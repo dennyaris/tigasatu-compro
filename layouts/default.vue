@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans overflow-x-hidden">
+  <div class="font-sans">
     <HeaderDefault />
     <main>
       <slot />
