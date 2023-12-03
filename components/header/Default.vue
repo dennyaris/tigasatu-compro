@@ -109,17 +109,11 @@ const handleClick = () => {
               </button>
               <div v-show="isSolutionOpen" class="w-full pl-4 pt-3">
                 <div class="flex flex-col gap-y-4">
-                  <NuxtLink :to="localePath('/solution/cardio', locale)" class="flex gap-2" @click="handleClick">
-                    <img class="w-8 h-8 shrink-0" src="/images/solution-cardio.png" alt="Cardio Solution">
-                    <span class="text-lg font-semibold tracking-wide">Cardio Solution</span>
-                  </NuxtLink>
-                  <NuxtLink :to="localePath('/solution/diabetic', locale)" class="flex gap-2" @click="handleClick">
-                    <img class="w-8 h-8 shrink-0" src="/images/solution-diabetic.png" alt="Cardio Solution">
-                    <span class="text-lg font-semibold tracking-wide">Diabetic Solution</span>
-                  </NuxtLink>
-                  <NuxtLink :to="localePath('/solution/dental', locale)" class="flex gap-2" @click="handleClick">
-                    <img class="w-8 h-8 shrink-0" src="/images/solution-dental.png" alt="Cardio Solution">
-                    <span class="text-lg font-semibold tracking-wide">Dental Solution</span>
+                  <NuxtLink v-for="(item, idx) in $tm('home.solution.items')" :key="idx" :to="localePath($rt(item.to), locale)" class="flex gap-2" @click="handleClick">
+                    <img class="w-8 h-8 shrink-0" :src="$rt(item.image)" :alt="$rt(item.title)">
+                    <span class="text-lg font-semibold tracking-wide">
+                      {{ locale === 'en' ? $rt(item.title) + ' ' + $t('home.solution.solution') : $t('home.solution.solution') + ' ' + $rt(item.title) }}
+                    </span>
                   </NuxtLink>
                 </div>
               </div>

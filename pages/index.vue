@@ -72,35 +72,29 @@ const setThumbsSwiper = (swiper) => {
       <div class="container w-full h-full text-white flex items-center">
         <div class="max-w-4xl mx-auto text-center min-h-">
           <div class="relative mb-6 inline-flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-2 ring-white">
-            <span class="font-bold tracking-wide">We’re hiring</span>
+            <span class="font-bold tracking-wide">{{ $t('home.hero.hiring') }}</span>
             <span class="h-4 w-px bg-blue-light" aria-hidden="true" />
             <NuxtLink :to="localePath('/career', locale)" class="flex items-center gap-x-1">
               <span class="absolute inset-0" aria-hidden="true" />
-              See open positions
+              {{ $t('home.hero.see_vacancies') }}
               <i class="i-mdi-chevron-double-right -mr-2 h-5 w-5" aria-hidden="true" />
             </NuxtLink>
           </div>
           <h1 class="font-mono font-semibold !leading-extreme text-3xl lg:text-6xl">
-            Advancing Healthcare in Indonesia with Premier Medical Equipment Solutions
+            {{ $t('home.hero.title') }}
           </h1>
           <p class="hidden tracking-wide text-lg my-8">
             Bridging the Gap Between Medical Equipment Manufacturers and Healthcare Professionals: Delivering Quality, Innovation, and Excellence in Healthcare Services Throughout Indonesia Since 2017
           </p>
           <p class="tracking-wide lg:text-lg my-8">
-            We are bridging medical equipment
-            manufacturers with medical professionals and
-            consumers all over Indonesia. We provide
-            leading-edge services in the healthcare
-            industry through strong partnerships, quality
-            products, and excellent service to deliver the
-            best quality to our customers.
+            {{ $t('home.hero.subtitle') }}
           </p>
           <div class="flex justify-center gap-3 md:gap-6">
             <NuxtLink :to="localePath('/about', locale)" class="font-medium text-base tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-secondary">
-              More Detail
+              {{ $t('home.hero.btn_detail') }}
             </NuxtLink>
             <NuxtLink :to="localePath('/contact', locale)" class="font-medium text-base tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-transparent ">
-              Contact Us
+              {{ $t('home.hero.btn_contact') }}
             </NuxtLink>
           </div>
         </div>
@@ -119,64 +113,27 @@ const setThumbsSwiper = (swiper) => {
   <section class="bg-blue-50 py-20">
     <div class="container">
       <h2 class="text-4xl font-black !leading-none text-center">
-        Our Solution Specialization Focus
+        {{ $t('home.solution.title') }}
       </h2>
       <div id="solution-grid" class="grid gap-y-8 gap-3 md:gap-6 grid-cols-1 md:grid-cols-3 mt-12">
-        <div :class="solutionItemClass">
+        <div v-for="(item, idx) in $tm('home.solution.items')" :key="idx" :class="solutionItemClass">
           <div class="flex items-center gap-3 mb-6">
-            <img class="w-14 h-14 shrink-0" src="/images/solution-cardio.png" alt="Cardio Solution">
-            <h3 class="text-[#123049] text-3xl font-black">
-              Cardio
-              <span class="text-2xl font-bold">Solutions</span>
+            <img class="w-14 h-14 shrink-0" :src="$rt(item.image)" :alt="$rt(item.title)">
+            <h3 v-if="locale === 'en'" class="text-[#123049] text-3xl font-black">
+              {{ $rt(item.title) }}
+              <span class="text-2xl font-bold">{{ $t('home.solution.solution') }}</span>
+            </h3>
+            <h3 v-else class="text-[#123049] text-3xl font-black">
+              <span class="text-2xl font-bold">{{ $t('home.solution.solution') }}</span>
+              {{ $rt(item.title) }}
             </h3>
           </div>
           <p class="text-[#7686ab] !leading-snug tracking-wide">
-            Distributing major Western brands in Intervention Cardiology
-            and Electrophysiology solutions requiring deep technical
-            know-how / professional applicants 24/7.
+            {{ $rt(item.subtitle) }}
           </p>
           <div class="flex justify-end items-end grow pt-4">
-            <NuxtLink :to="localePath('/solution/cardio', locale)" class="inline-block font-medium underline py-1 px-6 rounded-full text-secondary">
-              Learn More
-            </NuxtLink>
-          </div>
-        </div>
-        <div :class="solutionItemClass">
-          <div class="flex items-center gap-3 mb-6">
-            <img class="w-14 h-14 shrink-0" src="/images/solution-diabetic.png" alt="Cardio Solution">
-            <h3 class="text-[#123049] text-3xl font-black">
-              Diabetic
-              <span class="text-2xl font-bold">Solutions</span>
-            </h3>
-          </div>
-          <p class="text-[#7686ab] !leading-snug tracking-wide">
-            The only official distributor in the whole of Indonesia of
-            technology solutions for Insulin-dependent diabetes patients
-            and specialty clinics.
-          </p>
-          <div class="flex justify-end items-end grow pt-4">
-            <NuxtLink :to="localePath('/solution/diabetic', locale)" class="inline-block font-medium underline py-1 px-6 rounded-full text-secondary">
-              Learn More
-            </NuxtLink>
-          </div>
-        </div>
-        <div :class="solutionItemClass">
-          <div class="flex items-center gap-3 mb-6">
-            <img class="w-14 h-14 shrink-0" src="/images/solution-dental.png" alt="Cardio Solution">
-            <h3 class="text-[#123049] text-3xl font-black">
-              Dental
-              <span class="text-2xl font-bold">Solutions</span>
-            </h3>
-          </div>
-          <p class="text-[#7686ab] !leading-snug tracking-wide">
-            Distributing major Western and Asian brands of capital
-            equipment, hand tools and consumables for all dental
-            specialties with a dedicated sales team and supporting
-            category specialists in Greater Jakarta.
-          </p>
-          <div class="flex justify-end items-end grow pt-4">
-            <NuxtLink :to="localePath('/solution/dental', locale)" class="inline-block font-medium underline py-1 px-6 rounded-full text-secondary">
-              Learn More
+            <NuxtLink :to="localePath($rt(item.to), locale)" class="inline-block font-medium underline py-1 px-6 rounded-full text-secondary">
+              {{ $t('home.solution.btn_detail') }}
             </NuxtLink>
           </div>
         </div>

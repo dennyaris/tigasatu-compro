@@ -22,6 +22,6 @@ const btnClass = 'flex items-center justify-center gap-1 border-2 border-blue-li
 </template>
 <style scoped>
 button.active {
-  @apply bg-blue-light;
+  --at-apply: bg-blue-light;
 }
 </style>

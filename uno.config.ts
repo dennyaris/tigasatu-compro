@@ -5,7 +5,8 @@ export default defineConfig({
     colors: {
       primary: '#1e4388',
       secondary: '#b02930',
-      'blue-light': '#eaf3ff'
+      'blue-light': '#eaf3ff',
+      'gray-ash': '#edf4f9'
     },
     width: {
       fit: 'fit-content'

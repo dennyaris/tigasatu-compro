@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/i18n',
+    '@vueuse/nuxt',
     '@nuxtjs/google-fonts',
     'nuxt-swiper'
   ],
@@ -32,7 +33,7 @@ export default defineNuxtConfig({
       { code: 'en', iso: 'en-US', file: 'en.json' },
       { code: 'id', iso: 'id-ID', file: 'id.json' }
     ],
-    lazy: true,
+    lazy: false,
     langDir: 'locales/'
   },
   googleFonts: {

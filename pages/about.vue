@@ -6,7 +6,9 @@ useHead({
 </script>
 <template>
   <div class="py-80">
-    <TestDisclosure />
+    <AboutCoreValues />
+    <AboutTimeline />
+    <AboutFaq />
   </div>
 </template>
 <style>

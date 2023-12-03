@@ -4,10 +4,116 @@
     "title": "Medical Supplier Company",
     "brands": {
       "title": "Explore Our Diverse Range of Brands"
+    },
+    "hero": {
+      "title": "Advancing Healthcare in Indonesia with Premier Medical Equipment Solutions",
+      "subtitle": "We are bridging medical equipment manufacturers with medical professionals and consumers all over Indonesia. We provide leading-edge services in the healthcare industry through strong partnerships, quality products, and excellent service to deliver the best quality to our customers.",
+      "hiring": "We're Hiring",
+      "see_vacancies": "See open positions",
+      "btn_detail": "More Detail",
+      "btn_contact": "Contact Us"
+    },
+    "solution": {
+      "title": "Our Solution Specialization Focus",
+      "solution": "Solution",
+      "btn_detail": "Learn More",
+      "items": [
+        {
+          "to": "/solution/cardio",
+          "image": "/images/solution-cardio.png",
+          "title": "Cardio",
+          "subtitle": "Distributing major Western brands in Intervention Cardiology and Electrophysiology solutions requiring deep technical know-how / professional applicants 24/7."
+        },
+        {
+          "to": "/solution/diabetic",
+          "image": "/images/solution-diabetic.png",
+          "title": "Diabetic",
+          "subtitle": "The only official distributor in the whole of Indonesia of technology solutions for Insulin-dependent diabetes patients and specialty clinics."
+        },
+        {
+          "to": "/solution/dental",
+          "image": "/images/solution-dental.png",
+          "title": "Dental",
+          "subtitle": "Distributing major Western and Asian brands of capital equipment, hand tools and consumables for all dental specialties with a dedicated sales team and supporting category specialists in Greater Jakarta."
+        }
+      ]
     }
   },
   "about": {
-    "title": "About Us"
+    "title": "About Us",
+    "faqs": [
+      {
+        "question": "What is TMP",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "What products and services does TMP provide?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "I want to partnership with TMP, how",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "I want to work at TMP, how?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      }
+    ],
+    "timelines": [
+      {
+        "year": "2017",
+        "title": "Establishment and Vision",
+        "description": "PT Tigaasu Medical Pratama was founded with a clear mission: to revolutionize healthcare in Indonesia through superior medical equipment solutions. Our journey began with the promise of excellence and dedication."
+      },
+      {
+        "year": "2018",
+        "title": "Building Strong Partnerships",
+        "description": "A year into our venture, we forged pivotal partnerships with top Western medical equipment manufacturers, expanding our offerings in Intervention Cardiology and Electrophysiology."
+      },
+      {
+        "year": "2019",
+        "title": "Official Distribution Milestone",
+        "description": "Achieved the status of the sole official distributor in Indonesia for cutting-edge Insulin-dependent diabetes technology solutions, reinforcing our market presence."
+      },
+      {
+        "year": "2020",
+        "title": "Expansion into Dental Excellence",
+        "description": "We broadened our horizons by distributing premier Western and Asian dental equipment, becoming a trusted name in dental healthcare solutions across Greater Jakarta."
+      },
+      {
+        "year": "2021",
+        "title": "24/7 Professional Support",
+        "description": "Introduced round-the-clock professional support, ensuring that our partners and clients receive unmatched service anytime, every time."
+      },
+      {
+        "year": "2022",
+        "title": "Continual Growth and Innovation",
+        "description": "Continuously expanding our product lines and services, we remained at the forefront of healthcare innovation, delivering on our commitment to quality and excellence."
+      },
+      {
+        "year": "2023",
+        "title": "Looking Ahead",
+        "description": "As we move forward, PT Tigaasu Medical Pratama continues to set the standard in the healthcare industry, promising to bring more advancements and comprehensive solutions to Indonesia's medical professionals and patients."
+      }
+    ],
+    "values": [
+      {
+        "title": "Thankful",
+        "description": "Gratitude to the lord and stakeholders to be the major thing. Make the firm to be receptive for inputs to keep growing."
+      },
+      {
+        "title": "Integrity",
+        "description": "The principle of the company to be committed and consistent in providing the best service so that we can be trusted by stakeholders."
+      },
+      {
+        "title": "Genuine",
+        "description": "Provide service sincerely and understand what it is to be done so that it can build each other up."
+      },
+      {
+        "title": "Agile",
+        "description": "Have the ability to adapt to changes, so we can build the business in a fast manner."
+      }
+    ]
   },
   "menu": {
     "home": "Home",
