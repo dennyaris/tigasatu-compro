@@ -53,7 +53,7 @@ const emit = defineEmits<{
       <img class="h-full aspect-video shrink-0 object-cover" src="https://lelogama.go-jek.com/prime/upload/image/2018_milestones.svg" alt="">
       <div class="pl-3">
         <div :class="isVisible ? 'text-white/90' : 'text-white/30'">
-          <h3 class="title font-semibold text-lg tracking-wide mb-2">
+          <h3 class="title font-bold text-lg tracking-wide mb-2">
             {{ title }}
           </h3>
           <p>{{ description }}</p>

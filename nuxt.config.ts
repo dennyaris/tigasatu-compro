@@ -39,7 +39,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Poppins: [300, 400, 500, 600, 700],
-      Inter: [600, 700]
+      Inter: [600, 700],
+      Barlow: [700]
     },
     preconnect: true,
     prefetch: true

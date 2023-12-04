@@ -20,6 +20,7 @@ export default defineConfig({
       extreme: '1.125'
     },
     fontFamily: {
+      heading: ['Barlow', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
       sans: [
         'Poppins',
         'ui-sans-serif',

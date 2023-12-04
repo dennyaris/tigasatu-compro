@@ -5,7 +5,8 @@ useHead({
 })
 </script>
 <template>
-  <div class="py-80">
+  <div class="pb-20">
+    <AboutHero />
     <AboutCoreValues />
     <AboutTimeline />
     <AboutFaq />

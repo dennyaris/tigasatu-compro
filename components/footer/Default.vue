@@ -9,8 +9,8 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
 <template>
   <footer class="relative bg-primary">
     <div class="widget text-white tracking-wide lg:pt-44">
-      <div class="static lg:absolute top-0 left-0 w-full">
-        <div class="container lg:-translate-y-1/2 text-black overflow-hidden flex justify-between bg-slate-100 lg:h-60 lg:rounded-2xl">
+      <div class="static lg:absolute top-0 left-0 w-full pointer-events-none">
+        <div class="container pointer-events-auto lg:-translate-y-1/2 text-black overflow-hidden flex justify-between bg-slate-100 lg:h-60 lg:rounded-2xl">
           <div class="flex items-center py-12 px-8">
             <div class="grow">
               <h2 class="text-xl md:text-3xl font-semibold mb-2">

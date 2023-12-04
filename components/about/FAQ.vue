@@ -8,20 +8,9 @@ function hideOther (index: number) {
 </script>
 
 <template>
-  <section class="py-20">
+  <section class="relative pb-24 pt-0">
     <div class="container flex flex-col lg:flex-row gap-y-8">
-      <div class="lg:w-100 shrink-0">
-        <p class="text-3xl font-semibold mb:4 md:mb-6">
-          Selalu ada untuk membantu Anda
-        </p>
-        <p class="text-base mb:4 md:mb-6">
-          Apabila Anda ingin mengetahui lebih lanjut mengenai produk pembayaran, pendaftaran, atau solusi atas kendala yang dialami, kami selalu siap membantu Anda. Hubungi kami lewat media sosial atau tombol chat di sebelah kanan. Anda juga dapat mengunjungi Pusat Bantuan kami.
-        </p>
-        <NuxtLink class="inline-block border-2 border-secondary bg-secondary text-white py-2 px-8 rounded-full text-center sm:text-left">
-          Contact Us
-        </NuxtLink>
-      </div>
-      <div class="grow lg:pl-6">
+      <div class="grow lg:pr-6">
         <Disclosure
           v-for="(item, idx) in $tm('about.faqs')"
           :key="idx"
@@ -45,6 +34,30 @@ function hideOther (index: number) {
           </DisclosurePanel>
         </Disclosure>
       </div>
+      <div class="lg:w-100 shrink-0">
+        <p class="text-3xl font-semibold mb:4 md:mb-6">
+          Selalu ada untuk membantu Anda
+        </p>
+        <p class="text-base mb:4 md:mb-6">
+          Apabila Anda ingin mengetahui lebih lanjut mengenai produk pembayaran, pendaftaran, atau solusi atas kendala yang dialami, kami selalu siap membantu Anda. Hubungi kami lewat media sosial atau tombol chat di sebelah kanan. Anda juga dapat mengunjungi Pusat Bantuan kami.
+        </p>
+        <NuxtLink class="inline-block border-2 border-secondary bg-secondary text-white py-2 px-8 rounded-full text-center sm:text-left">
+          Contact Us
+        </NuxtLink>
+      </div>
     </div>
   </section>
 </template>
+<style scoped>
+section::before {
+  content: "";
+  background-image: url(/images/pattern-clear-white.png);
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: -199px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 0;
+}
+</style>
