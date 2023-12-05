@@ -15,7 +15,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="(value, idx) in $tm('about.values')" :key="idx" class="bg-white rounded-2xl shadow px-2 py-2">
           <div class="relative bg-primary text-white rounded-lg px-2 py-6 text-center">
-            <span class="bg-primary rounded-full flex items-center justify-center text-5xl font-bold w-16 h-16 absolute top-2 left-4 md:left-2 -translate-y-1/2 -translate-x-1/2">{{ $rt(value.title).charAt(0) }}</span>
+            <span class="bg-secondary rounded-full flex items-center justify-center text-5xl font-bold w-16 h-16 absolute top-2 left-4 md:left-2 -translate-y-1/2 -translate-x-1/2">{{ $rt(value.title).charAt(0) }}</span>
             <h3 class="text-3xl font-heading font-bold">
               {{ $rt(value.title) }}
             </h3>

@@ -41,6 +41,15 @@
   },
   "about": {
     "title": "About Us",
+    "hero": {
+      "title": "Advancing Indonesian Healthcare with PT Tigasatu Medika Pratama",
+      "paragraphs": [
+        "PT Tigasatu Medika Pratama is a fast growing company engaged in marketing, distribution, and sales of medical equipment. Established in 2017, PT Tigasatu Medika Pratama dedicated advancing the healthcare in Indonesia.",
+        "We are bridging medical equipment manufacturers with consumers all over Indonesia. We provide leading-edge services in the healthcare industry through strong partnerships, quality products, and excellent service to deliver the best quality to our customers."
+      ]
+    },
+    "faq_title": "Always there to help you",
+    "faq_subtitle": "If you want to know more about payment products, registration, or solutions to problems you are experiencing, we are always ready to help you. Contact us via social media or the chat button on the right. You can also visit our Help Center.",
     "faqs": [
       {
         "question": "What is TMP",
@@ -121,6 +130,7 @@
     "contact": "Contact",
     "career": "Career",
     "solution": "Solutions",
+    "team": "Team",
     "privacy_policy": "Privacy Policy",
     "terms_conditions": "Terms & Conditions"
   },

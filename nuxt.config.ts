@@ -36,6 +36,9 @@ export default defineNuxtConfig({
     lazy: false,
     langDir: 'locales/'
   },
+  swiper: {
+    modules: ['pagination', 'autoplay', 'free-mode', 'thumbs', 'navigation']
+  },
   googleFonts: {
     families: {
       Poppins: [300, 400, 500, 600, 700],

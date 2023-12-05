@@ -5,7 +5,7 @@ useHead({
 })
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const solutionItemClass = 'flex flex-col bg-white rounded-3xl shadow-xl py-8 px-6 ring-2 ring-transparent hover:ring-primary'
+const solutionItemClass = 'flex flex-col bg-white rounded-3xl my-shadow py-8 px-6 ring-2 ring-transparent hover:ring-primary'
 const testimonials = [
   {
     name: 'Dr. Siti Setiati, SpPD-KEMD',
@@ -101,16 +101,16 @@ const setThumbsSwiper = (swiper) => {
       </div>
     </div>
   </section>
-  <section class="bg-blue-50 py-24">
+  <section id="slide-brand" class="bg-primary py-24">
     <div class="container">
-      <h2 class="font-black text-4xl text-center !leading-none mb-8">
+      <h2 class="font-black text-4xl text-center !leading-none mb-8 text-white">
         {{ $t('home.brands.title') }}
       </h2>
       <SectionSlideBrand :reverse-direction="false" />
       <SectionSlideBrand :reverse-direction="true" />
     </div>
   </section>
-  <section class="bg-blue-50 py-20">
+  <section id="solution" class="bg-white py-24">
     <div class="container">
       <h2 class="text-4xl font-black !leading-none text-center">
         {{ $t('home.solution.title') }}
@@ -128,7 +128,7 @@ const setThumbsSwiper = (swiper) => {
               {{ $rt(item.title) }}
             </h3>
           </div>
-          <p class="text-[#7686ab] !leading-snug tracking-wide">
+          <p class="text-subtitle !leading-snug tracking-wide">
             {{ $rt(item.subtitle) }}
           </p>
           <div class="flex justify-end items-end grow pt-4">
@@ -140,19 +140,23 @@ const setThumbsSwiper = (swiper) => {
       </div>
     </div>
   </section>
-  <section class="pb-20 lg:pb-48 pt-20">
+  <section class="bg-blue-50 py-24 lg:pb-80">
     <div class="container">
       <h2 class="text-4xl font-black !leading-none text-left mb-8">
         Our Client Testimonials
       </h2>
-      <div id="testimoni" class="shadow bg-blue-light rounded-6xl px-12 py-16">
+      <div id="testimoni" class="shadow bg-[#f7fafc] rounded-6xl px-12 py-16">
         <div>
           <Swiper
             class="swiper-summary mb-8"
             :modules="[SwiperAutoplay, ...swiperModules]"
             :slides-per-view="1"
             :loop="true"
-            :autoplay="{ delay: 5000 }"
+            :autoplay="{
+              delay: 3000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false,
+            }"
             :thumbs="{ swiper: thumbsSwiper }"
           >
             <SwiperSlide v-for="(testy, index) in testimonials" :key="index">
@@ -179,7 +183,7 @@ const setThumbsSwiper = (swiper) => {
             </SwiperSlide>
           </Swiper>
           <Swiper
-            class="bg-white shadow-sm rounded-4xl py-2 px-3"
+            class="bg-white my-shadow rounded-4xl py-2 px-3"
             :modules="swiperModules"
             :space-between="10"
             :slides-per-view="2"
@@ -204,6 +208,7 @@ const setThumbsSwiper = (swiper) => {
       </div>
     </div>
   </section>
+  <AboutFaq :show-contact-btn="false" />
 </template>
 <style>
 #testimoni {

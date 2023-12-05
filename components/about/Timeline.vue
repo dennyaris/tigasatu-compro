@@ -11,7 +11,9 @@ const onActive = (id: number) => {
         <h2 class="text-3xl !leading-tight font-black mb-6">
           Milestones: Charting Our Path of Progress and Innovation
         </h2>
-        <p>A retrospective look at the key moments that define our journey. From small steps to giant leaps, each milestone marks a chapter in our story of growth, determination, and success. Join us in celebrating the landmarks that have shaped our legacy.</p>
+        <p class="text-lg">
+          A retrospective look at the key moments that define our journey. From small steps to giant leaps, each milestone marks a chapter in our story of growth, determination, and success. Join us in celebrating the landmarks that have shaped our legacy.
+        </p>
       </div>
       <div class="bg-primary rounded-4xl lg:min-w-3xl mx-auto">
         <div class="h-50vh w-full relative overflow-y-auto scrollbar-hide snap-y snap-mandatory scroll-smooth">

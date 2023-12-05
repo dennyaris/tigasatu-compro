@@ -60,7 +60,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
           </div>
         </div>
         <div class="flex gap-6 lg:gap-20">
-          <div>
+          <div class="company-widget">
             <div class="text-lg font-bold tracking-normal mb-4">
               {{ $t('footer.company_widget.title') }}
             </div>
@@ -94,7 +94,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
                       Email
                     </p>
                     <p class="font-semibold">
-                      help@tigasatu.id
+                      info@tigasatumedika.com
                     </p>
                   </div>
                 </div>
@@ -177,5 +177,8 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
 <style scoped>
 .snow-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+.company-widget a {
+  @apply font-medium;
 }
 </style>

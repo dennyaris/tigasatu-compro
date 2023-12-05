@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
+defineProps({
+  showContactBtn: {
+    type: Boolean,
+    default: true
+  }
+})
+
 const elements = ref<any>([])
 function hideOther (index: number) {
   elements.value.filter((_:any, key: number) => key !== index).forEach((close: () => any) => close())
@@ -8,7 +18,7 @@ function hideOther (index: number) {
 </script>
 
 <template>
-  <section class="relative pb-24 pt-0">
+  <section class="relative pb-24 lg:pb-60 pt-0">
     <div class="container flex flex-col lg:flex-row gap-y-8">
       <div class="grow lg:pr-6">
         <Disclosure
@@ -36,12 +46,12 @@ function hideOther (index: number) {
       </div>
       <div class="lg:w-100 shrink-0">
         <p class="text-3xl font-semibold mb:4 md:mb-6">
-          Selalu ada untuk membantu Anda
+          {{ $t('about.faq_title') }}
         </p>
-        <p class="text-base mb:4 md:mb-6">
-          Apabila Anda ingin mengetahui lebih lanjut mengenai produk pembayaran, pendaftaran, atau solusi atas kendala yang dialami, kami selalu siap membantu Anda. Hubungi kami lewat media sosial atau tombol chat di sebelah kanan. Anda juga dapat mengunjungi Pusat Bantuan kami.
+        <p class="text-lg mb:4 md:mb-6">
+          {{ $t('about.faq_subtitle') }}
         </p>
-        <NuxtLink class="inline-block border-2 border-secondary bg-secondary text-white py-2 px-8 rounded-full text-center sm:text-left">
+        <NuxtLink v-if="showContactBtn" :to="localePath('/contact', locale)" class="inline-block border-2 border-secondary bg-secondary text-white py-2 px-8 rounded-full text-center sm:text-left">
           Contact Us
         </NuxtLink>
       </div>
@@ -50,6 +60,7 @@ function hideOther (index: number) {
 </template>
 <style scoped>
 section::before {
+  @apply hidden lg:block;
   content: "";
   background-image: url(/images/pattern-clear-white.png);
   position: absolute;

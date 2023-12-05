@@ -41,6 +41,15 @@
   },
   "about": {
     "title": "Tentang Kami",
+    "hero": {
+      "title": "Advancing Indonesian Healthcare with PT Tigasatu Medika Pratama",
+      "paragraphs": [
+        "PT Tigasatu Medika Pratama is a fast growing company engaged in marketing, distribution, and sales of medical equipment. Established in 2017, PT Tigasatu Medika Pratama dedicated advancing the healthcare in Indonesia.",
+        "We are bridging medical equipment manufacturers with consumers all over Indonesia. We provide leading-edge services in the healthcare industry through strong partnerships, quality products, and excellent service to deliver the best quality to our customers."
+      ]
+    },
+    "faq_title": "Selalu ada untuk membantu Anda",
+    "faq_subtitle": "Apabila Anda ingin mengetahui lebih lanjut mengenai produk pembayaran, pendaftaran, atau solusi atas kendala yang dialami, kami selalu siap membantu Anda. Hubungi kami lewat media sosial atau tombol chat di sebelah kanan. Anda juga dapat mengunjungi Pusat Bantuan kami.",
     "faqs": [
       {
         "question": "What is TMP",
@@ -121,6 +130,7 @@
     "contact": "Hubungi",
     "career": "Karir",
     "solution": "Produk",
+    "team": "Tim",
     "privacy_policy": "Kebijakan Privasi",
     "terms_conditions": "Syarat & Ketentuan"
   },

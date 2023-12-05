@@ -33,7 +33,7 @@ const handleClick = () => {
           <img class="h-8 w-auto" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
         </NuxtLink>
       </div>
-      <ul class="hidden lg:flex items-center justify-center gap-x-8">
+      <ul class="main-menu hidden lg:flex items-center justify-center gap-x-8">
         <li>
           <NuxtLink :class="menuItemClass" :to="localePath('/', locale)">
             {{ $t('menu.home') }}
@@ -48,6 +48,11 @@ const handleClick = () => {
         <li>
           <NuxtLink :class="menuItemClass" :to="localePath('/contact', locale)">
             {{ $t('menu.contact') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink :class="menuItemClass" :to="localePath('/team', locale)">
+            {{ $t('menu.team') }}
           </NuxtLink>
         </li>
       </ul>
@@ -126,6 +131,10 @@ const handleClick = () => {
               <span :class="mobileMenuItemIconClass" class="i-ph-globe-hemisphere-east-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.contact') }}</span>
             </NuxtLink>
+            <NuxtLink :class="mobileMenuItemClass" :to="localePath('/team', locale)" @click="handleClick">
+              <span :class="mobileMenuItemIconClass" class="i-ph-users-three-duotone" />
+              <span :class="mobileMenuItemTextClass">{{ $t('menu.team') }}</span>
+            </NuxtLink>
             <NuxtLink :class="mobileMenuItemClass" :to="localePath('/career', locale)" @click="handleClick">
               <span :class="mobileMenuItemIconClass" class="i-ph-briefcase-duotone" />
               <span :class="mobileMenuItemTextClass">{{ $t('menu.career') }}</span>
@@ -136,3 +145,8 @@ const handleClick = () => {
     </Dialog>
   </header>
 </template>
+<style scoped>
+.main-menu .router-link-active {
+  @apply text-primary underline;
+}
+</style>
