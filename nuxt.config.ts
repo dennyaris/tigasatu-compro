@@ -27,6 +27,9 @@ export default defineNuxtConfig({
   ],
   i18n: {
     debug: false,
+    compilation: {
+      strictMessage: false
+    },
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     locales: [

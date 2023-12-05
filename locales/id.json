@@ -105,24 +105,31 @@
         "description": "As we move forward, PT Tigaasu Medical Pratama continues to set the standard in the healthcare industry, promising to bring more advancements and comprehensive solutions to Indonesia's medical professionals and patients."
       }
     ],
-    "values": [
-      {
-        "title": "Thankful",
-        "description": "Gratitude to the lord and stakeholders to be the major thing. Make the firm to be receptive for inputs to keep growing."
-      },
-      {
-        "title": "Integrity",
-        "description": "The principle of the company to be committed and consistent in providing the best service so that we can be trusted by stakeholders."
-      },
-      {
-        "title": "Genuine",
-        "description": "Provide service sincerely and understand what it is to be done so that it can build each other up."
-      },
-      {
-        "title": "Agile",
-        "description": "Have the ability to adapt to changes, so we can build the business in a fast manner."
-      }
-    ]
+    "vision": {
+      "title": "T.I.G.A. Prinsip: Pilar Etos dan Keunggulan Kami",
+      "subtitle": "Mewujudkan <strong>Rasa Syukur</strong>, <strong>Integritas</strong>, <strong>Keaslian</strong>, dan <strong>Ketangkasan</strong>, nilai-nilai inti kami memandu kami dalam menjalin hubungan yang bermakna dan mencapai keunggulan dalam setiap usaha. Hal tersebut bukan sekadar nilai, namun merupakan komitmen kami terhadap pertumbuhan, kepercayaan, keaslian, dan kemampuan beradaptasi.",
+      "values": [
+        {
+          "title": "Thankful",
+          "description": "Rasa syukur kepada Tuhan dan pemangku kepentingan menjadi hal yang utama. Membuat perusahaan mau menerima masukan untuk terus berkembang."
+        },
+        {
+          "title": "Integrity",
+          "description": "Prinsip perusahaan adalah berkomitmen dan konsisten dalam memberikan pelayanan terbaik sehingga dapat dipercaya oleh pemangku kepentingan."
+        },
+        {
+          "title": "Genuine",
+          "description": "Memberikan pelayanan dengan ikhlas dan memahami apa yang harus dilakukan sehingga dapat saling membangun."
+        },
+        {
+          "title": "Agile",
+          "description": "Memiliki kemampuan beradaptasi terhadap perubahan, sehingga dapat membangun bisnis dengan cepat."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "h1": "Lihat Lokasi Kami Disini"
   },
   "menu": {
     "home": "Beranda",

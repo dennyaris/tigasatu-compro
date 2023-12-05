@@ -22,13 +22,13 @@ const setVisibleOnce = (isIntersecting: boolean) => {
   <div class="min-h-250" />
   <section ref="mapSection">
     <div class="container">
-      <h2 class="text-4xl font-bold mb-8">
-        View Our Location Here
+      <h2 class="text-4xl font-bold mb-8 relative">
+        {{ $t('contact.h1') }}
       </h2>
     </div>
     <LazyContactIframeMap v-if="mapIsVisible" />
   </section>
-  <section class="bg-slate-50 py-20 lg:pb-48">
+  <section class="bg-slate-50 py-24 lg:pb-48">
     <div class="container">
       <div class="flex flex-col md:flex-row rounded-4xl overflow-hidden shadow">
         <div class="flex flex-col py-20 px-12 md:max-w-1/2 bg-blue-light">
@@ -49,7 +49,7 @@ const setVisibleOnce = (isIntersecting: boolean) => {
                   Email
                 </p>
                 <p class="font-semibold">
-                  help@tigasatu.id
+                  info@tigasatumedika.com
                 </p>
               </div>
             </div>
@@ -124,3 +124,6 @@ const setVisibleOnce = (isIntersecting: boolean) => {
     </div>
   </section>
 </template>
+<style>
+
+</style>
