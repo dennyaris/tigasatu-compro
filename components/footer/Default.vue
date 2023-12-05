@@ -49,11 +49,11 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
             </div>
             <div class="flex gap-4">
               <NuxtLink to="https://shopee.co.id/31medika" target="_blank" class="inline-flex bg-red-50 items-center rounded-lg border-3 border-[#F0582C] py-1 px-3">
-                <img class="h-8 w-8 mr-2" src="images/shopee-square.png" alt="">
+                <img class="h-8 w-8 mr-2" src="/images/shopee-square.png" alt="">
                 <span class="text-lg font-semibold text-[#F0582C]">Shopee</span>
               </NuxtLink>
               <NuxtLink to="https://www.tokopedia.com/31medika" target="_blank" class="inline-flex bg-green-50 items-center rounded-lg border-3 border-[#5FBC54] py-1 px-3">
-                <img class="h-8 w-8 mr-2" src="images/tokopedia-square.png" alt="">
+                <img class="h-8 w-8 mr-2" src="/images/tokopedia-square.png" alt="">
                 <span class="text-lg font-semibold text-[#5FBC54]">Tokopedia</span>
               </NuxtLink>
             </div>
