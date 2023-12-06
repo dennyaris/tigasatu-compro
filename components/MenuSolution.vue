@@ -1,6 +1,12 @@
+<script setup lang="ts">
+import { Menu, MenuButton, MenuItems } from '@headlessui/vue'
+const { locale } = useI18n()
+const localePath = useLocalePath()
+</script>
+
 <template>
   <Menu as="li" class="relative inline-block text-left">
-    <div>
+    <div class="dropdown-btn px-2 py-1.5" :class="{'active': $route.matched.some(({ path }) => path.startsWith('/solution'))}">
       <MenuButton
         class="flex items-center font-semibold tracking-wide hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/75"
       >
@@ -45,9 +51,8 @@
     </transition>
   </Menu>
 </template>
-
-<script setup>
-import { Menu, MenuButton, MenuItems } from '@headlessui/vue'
-const { locale } = useI18n()
-const localePath = useLocalePath()
-</script>
+<style>
+.dropdown-btn.active {
+  @apply bg-primary text-white rounded-lg;
+}
+</style>

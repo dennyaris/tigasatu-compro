@@ -6,7 +6,7 @@ import {
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const menuItemClass = 'font-semibold tracking-wide hover:text-secondary'
+const menuItemClass = 'font-semibold tracking-wide hover:text-secondary px-2 py-1.5'
 const mobileMenuItemClass = 'flex items-center gap-1.5 group rounded-lg border-2 border-blue-light px-2 py-2'
 const mobileMenuItemIconClass = 'w-8 h-8 group-hover:text-secondary'
 const mobileMenuItemTextClass = 'text-lg font-medium tracking-wide group-hover:text-primary group-hover:font-semibold'
@@ -53,6 +53,11 @@ const handleClick = () => {
         <li>
           <NuxtLink :class="menuItemClass" :to="localePath('/team', locale)">
             {{ $t('menu.team') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink class="active-secondary" :class="menuItemClass" :to="localePath('/career', locale)">
+            {{ $t('menu.hiring') }}
           </NuxtLink>
         </li>
       </ul>
@@ -147,6 +152,12 @@ const handleClick = () => {
 </template>
 <style scoped>
 .main-menu .router-link-active {
-  @apply text-primary underline;
+  @apply bg-primary text-white rounded-lg;
+}
+.main-menu .active-secondary {
+  @apply text-secondary;
+}
+.main-menu .router-link-active.active-secondary {
+  @apply bg-secondary text-white rounded-lg;
 }
 </style>
