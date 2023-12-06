@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20">
-    <h1>Career</h1>
-  </div>
+  <h1 class="text-center text-4xl font-bold mt-40 mb-80">
+    Career
+  </h1>
 </template>

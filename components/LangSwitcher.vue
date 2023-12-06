@@ -11,7 +11,7 @@ const btnClass = 'flex items-center justify-center gap-1 border-2 border-blue-li
 <template>
   <div class="lang-switcher flex">
     <button class="rounded-l-lg" :class="[btnClass, { active: locale === 'en' }]" @click="changeLocale('en')">
-      <img class="w-4 h-4" src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="48">
+      <img class="w-4 h-4" src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="48">
       <span class="font-semibold text-sm">EN</span>
     </button>
     <button class="rounded-r-lg" :class="[btnClass, { active: locale === 'id' }]" @click="changeLocale('id')">

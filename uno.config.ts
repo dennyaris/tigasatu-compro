@@ -1,6 +1,9 @@
 import { defineConfig } from 'unocss'
 
 export default defineConfig({
+  safelist: [
+    ...Array.from({ length: 6 }, (_, i) => `line-clamp-${i + 1}`)
+  ],
   theme: {
     colors: {
       primary: '#1e4388',
@@ -54,7 +57,11 @@ export default defineConfig({
   shortcuts: [
     {
       container: 'max-w-7xl mx-auto px-3 sm:px-4 lg:px-6',
-      'form-input': 'block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6'
+      'form-input': 'block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6',
+      label: 'text-sm px-1.5 py-0.5 rounded leading-none font-medium bg-gray-600 text-white',
+      'text-heading': 'text-4xl lg:text-5xl font-bold',
+      'text-subheading': 'text-2xl lg:text-3xl font-bold',
+      'text-subtitle': 'text-lg lg:text-xl'
     },
     [/^(flex|grid)-center/g, () => 'justify-center items-center']
   ]

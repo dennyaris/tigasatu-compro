@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const contactLabelClass = 'block text-sm font-medium leading-6 text-gray-900'
+const contactLabelClass = 'block text-base lg:text-lg font-medium leading-6 text-gray-900'
 
 const mapSection = ref(null)
 const mapIsVisible = ref(false)
@@ -16,13 +16,9 @@ const setVisibleOnce = (isIntersecting: boolean) => {
 </script>
 
 <template>
-  <div class="py-20">
-    <h1>Contact Us</h1>
-  </div>
-  <div class="min-h-250" />
-  <section ref="mapSection">
+  <section ref="mapSection" class="py-24">
     <div class="container">
-      <h2 class="text-4xl font-bold mb-8 relative">
+      <h2 class="text-heading mb-8">
         {{ $t('contact.h1') }}
       </h2>
     </div>

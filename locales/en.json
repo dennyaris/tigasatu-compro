@@ -131,6 +131,30 @@
   "contact": {
     "h1": "View Our Location Here"
   },
+  "team": {
+    "founder_title": "Founders and Management of The Company",
+    "founder_subtitle": "Our Founders and Managements is comprised of experienced professionals with a passion for helping others achieve their goals.",
+    "founders": [
+      {
+        "name": "Hendrik Kianto",
+        "title": "Founder",
+        "image": "/images/peoples/hendrik-kianto.png",
+        "bio": "MBA, Harvard Business School. Prior experiences include P&G and McKinsey & Co in strategic management & finance. Business interest in steel, food, and distributions."
+      },
+      {
+        "name": "Erwin Tenggono",
+        "title": "Co-Founder",
+        "image": "/images/peoples/erwin-tenggono.jpg",
+        "bio": "MBA, Prasetya Mulya Business School. Has 31 years senior executive at healthcare Industry. Sought after speaker on management and organization."
+      },
+      {
+        "name": "Christian Van Schoote",
+        "title": "Director",
+        "image": "/images/peoples/christian-van-schoote.png",
+        "bio": "MBA, INSEAD. Prior experiences include Director at Delhaize Group, Chief Executive Officer at MAP, Chief Operating Officer at Bhinneka, and Engagement Manager at McKinsey & Co."
+      }
+    ]
+  },
   "menu": {
     "home": "Home",
     "about": "About",
@@ -161,5 +185,24 @@
       "career": "Career",
       "contact": "Contact Us"
     }
+  },
+  "vacancies": {
+    "title": "We’re always looking for awesome people to join us",
+    "subtitle": "Embark on a Rewarding Career Journey with Us: Discover Exciting Career Paths, Contribute to Transforming Indonesia's Healthcare Landscape, and Be a Part of Our Mission to Innovate for a Healthier Tomorrow",
+    "see_all": "View all openings",
+    "jobs": [
+      {
+        "title": "Sales Development Representative",
+        "overview": "Join our team as a Sales Development Representative where you'll be instrumental in driving our business growth. Your role involves engaging with potential clients, identifying opportunities, and nurturing leads to set the stage for successful sales. You'll harness your communication skills and strategic thinking to create a robust pipeline, contributing directly to our company's success in the competitive healthcare sector.",
+        "location": "Jakarta, Indonesia",
+        "workPlace": "On-site"
+      },
+      {
+        "title": "Software Engineer",
+        "overview": "As a Software Engineer, you'll play a pivotal role in developing innovative software solutions that advance healthcare technology. You'll collaborate with cross-functional teams to design, build, and maintain efficient, reusable, and reliable code. Your expertise will be crucial in solving complex technical challenges and delivering high-quality products that make a meaningful impact in the healthcare industry.",
+        "location": "Jakarta, Indonesia",
+        "workPlace": "Remote"
+      }
+    ]
   }
 }

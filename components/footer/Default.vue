@@ -34,7 +34,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
           </div>
         </div>
       </div>
-      <div class="container pb-14 pt-14 lg:pt-0 flex gap-y-14 flex-col lg:flex-row justify-between">
+      <div class="container overflow-hidden pb-14 pt-14 lg:pt-0 flex gap-y-14 flex-col lg:flex-row justify-between">
         <div class="flex flex-col gap-4 lg:max-w-md">
           <img class="h-8 mb-3 snow-white object-contain w-fit" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
           <p class="font-semibold text-lg">

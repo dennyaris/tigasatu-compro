@@ -71,10 +71,10 @@ const setThumbsSwiper = (swiper) => {
     <div class="absolute top-0 left-0 w-full h-full">
       <div class="container w-full h-full text-white flex items-center">
         <div class="max-w-4xl mx-auto text-center min-h-">
-          <div class="relative mb-6 inline-flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-2 ring-white">
+          <div class="relative mb-10 inline-flex items-center gap-x-4 rounded-full px-4 py-1 text-base leading-6 ring-2 ring-white">
             <span class="font-bold tracking-wide">{{ $t('home.hero.hiring') }}</span>
             <span class="h-4 w-px bg-blue-light" aria-hidden="true" />
-            <NuxtLink :to="localePath('/career', locale)" class="flex items-center gap-x-1">
+            <NuxtLink :to="localePath('/career', locale)" class="flex items-center gap-x-1 text-lg">
               <span class="absolute inset-0" aria-hidden="true" />
               {{ $t('home.hero.see_vacancies') }}
               <i class="i-mdi-chevron-double-right -mr-2 h-5 w-5" aria-hidden="true" />
@@ -86,14 +86,14 @@ const setThumbsSwiper = (swiper) => {
           <p class="hidden tracking-wide text-lg my-8">
             Bridging the Gap Between Medical Equipment Manufacturers and Healthcare Professionals: Delivering Quality, Innovation, and Excellence in Healthcare Services Throughout Indonesia Since 2017
           </p>
-          <p class="tracking-wide lg:text-lg my-8">
+          <p class="tracking-wide text-lg lg:text-2xl !leading-snug font-medium my-10">
             {{ $t('home.hero.subtitle') }}
           </p>
           <div class="flex justify-center gap-3 md:gap-6">
-            <NuxtLink :to="localePath('/about', locale)" class="font-medium text-base tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-secondary">
+            <NuxtLink :to="localePath('/about', locale)" class="font-medium text-lg tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-secondary">
               {{ $t('home.hero.btn_detail') }}
             </NuxtLink>
-            <NuxtLink :to="localePath('/contact', locale)" class="font-medium text-base tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-transparent ">
+            <NuxtLink :to="localePath('/contact', locale)" class="font-medium text-lg tracking-wide py-2 px-6 rounded-full border-2 border-white text-white bg-transparent ">
               {{ $t('home.hero.btn_contact') }}
             </NuxtLink>
           </div>
@@ -103,7 +103,7 @@ const setThumbsSwiper = (swiper) => {
   </section>
   <section id="slide-brand" class="bg-primary py-24">
     <div class="container">
-      <h2 class="font-black text-4xl text-center !leading-none mb-8 text-white">
+      <h2 class="text-heading text-center !leading-none mb-8 text-white">
         {{ $t('home.brands.title') }}
       </h2>
       <SectionSlideBrand :reverse-direction="false" />
@@ -112,7 +112,7 @@ const setThumbsSwiper = (swiper) => {
   </section>
   <section id="solution" class="bg-white py-24">
     <div class="container">
-      <h2 class="text-4xl font-black !leading-none text-center">
+      <h2 class="text-heading !leading-none text-center">
         {{ $t('home.solution.title') }}
       </h2>
       <div id="solution-grid" class="grid gap-y-8 gap-3 md:gap-6 grid-cols-1 md:grid-cols-3 mt-12">
@@ -121,10 +121,10 @@ const setThumbsSwiper = (swiper) => {
             <img class="w-14 h-14 shrink-0" :src="$rt(item.image)" :alt="$rt(item.title)">
             <h3 v-if="locale === 'en'" class="text-[#123049] text-3xl font-black">
               {{ $rt(item.title) }}
-              <span class="text-2xl font-bold">{{ $t('home.solution.solution') }}</span>
+              <span class="text-subheading">{{ $t('home.solution.solution') }}</span>
             </h3>
             <h3 v-else class="text-[#123049] text-3xl font-black">
-              <span class="text-2xl font-bold">{{ $t('home.solution.solution') }}</span>
+              <span class="text-subheading">{{ $t('home.solution.solution') }}</span>
               {{ $rt(item.title) }}
             </h3>
           </div>
@@ -142,7 +142,7 @@ const setThumbsSwiper = (swiper) => {
   </section>
   <section class="bg-blue-50 py-24 lg:pb-80">
     <div class="container">
-      <h2 class="text-4xl font-black !leading-none text-left mb-8">
+      <h2 class="text-heading !leading-none text-left mb-8">
         Our Client Testimonials
       </h2>
       <div id="testimoni" class="shadow bg-[#f7fafc] rounded-6xl px-12 py-16">
@@ -209,6 +209,7 @@ const setThumbsSwiper = (swiper) => {
     </div>
   </section>
   <AboutFaq :show-contact-btn="false" />
+  <SectionFeaturedVacancies class="lg:pb-60 bg-slate-50" />
 </template>
 <style>
 #testimoni {

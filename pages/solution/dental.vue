@@ -1,3 +1,5 @@
 <template>
-  <h1>Cardio Solution</h1>
+  <h1 class="text-center text-4xl font-bold mt-40 mb-80">
+    Dental Solution
+  </h1>
 </template>

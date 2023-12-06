@@ -18,7 +18,7 @@ function hideOther (index: number) {
 </script>
 
 <template>
-  <section class="relative pb-24 lg:pb-60 pt-0">
+  <section class="relative pb-24 pt-0" :class="[$attrs.class]">
     <div class="container flex flex-col lg:flex-row gap-y-8">
       <div class="grow lg:pr-6">
         <Disclosure

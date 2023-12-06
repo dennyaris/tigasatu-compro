@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
 const founders = [
   {
     name: 'Hendrik Kianto',
@@ -19,65 +22,46 @@ const founders = [
     bio: 'MSc. in Industrial Engineering, Texas A&M University. Prior experiences include 17 years in GE and 12 years in ASEAN. Have a strong ASEAN network.'
   }
 ]
+
+const jobs = [
+  {
+    title: 'Sales Development Representative',
+    overview: "Join our team as a Sales Development Representative where you'll be instrumental in driving our business growth. Your role involves engaging with potential clients, identifying opportunities, and nurturing leads to set the stage for successful sales. You'll harness your communication skills and strategic thinking to create a robust pipeline, contributing directly to our company's success in the competitive healthcare sector.",
+    location: 'Jakarta, Indonesia',
+    workPlace: 'On-site'
+  },
+  {
+    title: 'Software Engineer',
+    overview: "As a Software Engineer, you'll play a pivotal role in developing innovative software solutions that advance healthcare technology. You'll collaborate with cross-functional teams to design, build, and maintain efficient, reusable, and reliable code. Your expertise will be crucial in solving complex technical challenges and delivering high-quality products that make a meaningful impact in the healthcare industry.",
+    location: 'Jakarta, Indonesia',
+    workPlace: 'Remote'
+  }
+]
 </script>
 <template>
   <main class="mb-60">
     <section id="founders" class="py-24">
       <div class="container">
-        <h2 class="text-center text-4xl font-semibold">
-          Founders
+        <h2 class="text-center text-4xl font-semibold mb-6">
+          {{ $t('team.founder_title') }}
         </h2>
+        <p class="max-w-4xl mx-auto text-lg text-center">
+          {{ $t('team.founder_subtitle') }}
+        </p>
         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
-          <li v-for="(founder, idx) in founders" :key="idx" class="rounded-2xl bg-slate-100 px-8 py-10">
-            <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" :src="founder.image" :alt="founder.name">
+          <li v-for="(founder, idx) in $tm('team.founders')" :key="idx" class="rounded-2xl bg-slate-100 px-8 py-10">
+            <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" :src="$rt(founder.image)" :alt="$rt(founder.name)">
             <h3 class="mt-8 mb-4 text-center text-xl font-semibold">
-              {{ founder.name }}
+              {{ $rt(founder.name) }}
             </h3>
             <p class="text-lg text-center">
-              {{ founder.bio }}
+              {{ $rt(founder.bio) }}
             </p>
           </li>
         </ul>
       </div>
     </section>
-    <section id="leaders" class="py-24">
-      <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <div class="col-span-1 sm:col-span-2 lg:col-span-1">
-          <h2 class="text-4xl font-semibold mb-6">
-            Meet our leadership
-          </h2>
-          <p class="text-lg">
-            Our leadership team is comprised of experienced professionals with a passion for helping others achieve their goals.
-          </p>
-        </div>
-        <div class="">
-          <img v-if="true" class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/peoples/hendrik-kianto.png">
-          <img v-else class="aspect-[3/2] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
-          <h3 class="mt-8 mb-1 text-center text-xl font-semibold">
-            Hendrik Kianto
-          </h3>
-          <p class="text-primary text-center mb-4 font-semibold">
-            Director
-          </p>
-          <p class="text-lg text-center">
-            MBA, Harvard Business School. Prior experiences include P&G and McKinsey & Co in strategic management & finance. Business interest in steel, food, and distributions.
-          </p>
-        </div>
-        <div>
-          <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/peoples/christian-van-schoote.png">
-          <h3 class="mt-8 mb-1 text-center text-xl font-semibold">
-            Christian Van Schoote
-          </h3>
-          <p class="text-primary text-center mb-4 font-semibold">
-            Director
-          </p>
-          <p class="text-lg text-center">
-            MBA, INSEAD. Prior experiences include Director at Delhaize Group, Chief Executive Officer at MAP, Chief Operating Officer at Bhinneka, and Engagement Manager at McKinsey &Co
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="py-24">
+    <section class="py-24 bg-blue-light">
       <div class="container">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
@@ -102,5 +86,6 @@ const founders = [
         </div>
       </div>
     </section>
+    <SectionFeaturedVacancies />
   </main>
 </template>

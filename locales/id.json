@@ -131,6 +131,30 @@
   "contact": {
     "h1": "Lihat Lokasi Kami Disini"
   },
+  "team": {
+    "founder_title": "Pendiri dan Manajemen Perusahaan",
+    "founder_subtitle": "Pendiri dan Manajemen kami terdiri dari para profesional berpengalaman dengan keinginan untuk membantu orang lain mencapai tujuan mereka.",
+    "founders": [
+      {
+        "name": "Hendrik Kianto",
+        "title": "Pendiri",
+        "image": "/images/peoples/hendrik-kianto.png",
+        "bio": "MBA, Harvard Business School. Pengalaman sebelumnya termasuk P&G dan McKinsey & Co dalam manajemen strategis & keuangan. Minat bisnis di bidang baja, makanan, dan distribusi."
+      },
+      {
+        "name": "Erwin Tenggono",
+        "title": "Co-Founder",
+        "image": "/images/peoples/erwin-tenggono.jpg",
+        "bio": "MBA, Prasetya Mulya Business School. Memiliki 31 tahun pengalaman eksekutif senior di industri kesehatan. Pembicara yang dicari untuk manajemen dan organisasi."
+      },
+      {
+        "name": "Christian Van Schoote",
+        "title": "Direktur",
+        "image": "/images/peoples/christian-van-schoote.png",
+        "bio": "MBA, INSEAD. Pengalaman sebelumnya termasuk Direktur di Delhaize Group, Chief Executive Officer di MAP, Chief Operating Officer di Bhinneka, dan Engagement Manager di McKinsey &Co."
+      }
+    ]
+  },
   "menu": {
     "home": "Beranda",
     "about": "Tentang",
@@ -161,5 +185,24 @@
       "career": "Karir",
       "contact": "Hubungi Kami"
     }
+  },
+  "vacancies": {
+    "title": "Kami selalu mencari orang-orang hebat untuk bergabung dengan kami",
+    "subtitle": "Memulai Perjalanan Karir yang Mengesankan Bersama Kami: Temukan Jalur Karir yang Menarik, Berkontribusi dalam Transformasi Lanskap Kesehatan Indonesia, dan Jadilah Bagian dari Misi Kami untuk Berinovasi demi Masa Depan Kesehatan yang Lebih Baik",
+    "see_all": "Lihat semua lowongan",
+    "jobs": [
+      {
+        "title": "Sales Development Representative",
+        "overview": "Bergabunglah dengan tim kami sebagai Perwakilan Pengembangan Penjualan di mana Anda akan memainkan peran penting dalam pertumbuhan bisnis kami. Peran Anda melibatkan interaksi dengan klien potensial, mengidentifikasi peluang, dan mengembangkan prospek untuk menyiapkan panggung penjualan yang sukses. Anda akan memanfaatkan keterampilan komunikasi dan pemikiran strategis Anda untuk menciptakan pipeline yang kuat, berkontribusi langsung pada kesuksesan perusahaan kami di sektor kesehatan yang kompetitif.",
+        "location": "Jakarta, Indonesia",
+        "workPlace": "On-site"
+      },
+      {
+        "title": "Software Engineer",
+        "overview": "Sebagai Insinyur Perangkat Lunak, Anda akan memainkan peran penting dalam mengembangkan solusi perangkat lunak inovatif yang maju untuk teknologi kesehatan. Anda akan bekerja sama dengan tim lintas fungsi untuk merancang, membangun, dan memelihara kode yang efisien, dapat digunakan kembali, dan handal. Keahlian Anda akan sangat penting dalam menyelesaikan tantangan teknis yang kompleks dan menyampaikan produk berkualitas tinggi yang memberikan dampak signifikan dalam industri kesehatan.",
+        "location": "Jakarta, Indonesia",
+        "workPlace": "Remote"
+      }
+    ]
   }
 }
