@@ -148,7 +148,7 @@ const setThumbsSwiper = (swiper) => {
       <div id="testimoni" class="shadow bg-[#f7fafc] rounded-6xl px-12 py-16">
         <div>
           <Swiper
-            class="swiper-summary mb-8"
+            class="swiper-testimoni"
             :modules="[SwiperAutoplay, ...swiperModules]"
             :slides-per-view="1"
             :loop="true"
@@ -174,7 +174,7 @@ const setThumbsSwiper = (swiper) => {
                     {{ testy.title }} - {{ testy.company }}
                   </div>
                 </div>
-                <div class="grow md:pl-30 md:pr-10 text-[#123049] text-lg italic">
+                <div class="grow md:pl-30 md:pr-10 text-[#123049] text-lg lg:text-xl !leading-relaxed font-medium italic">
                   <i class="w-5 h-5 inline-block i-mdi-format-quote-open" />
                   {{ testy.testimony }}
                   <i class="w-5 h-5 inline-block i-mdi-format-quote-close" />
@@ -183,7 +183,7 @@ const setThumbsSwiper = (swiper) => {
             </SwiperSlide>
           </Swiper>
           <Swiper
-            class="bg-white my-shadow rounded-4xl py-2 px-3"
+            class="swiper-testimoni-nav"
             :modules="swiperModules"
             :space-between="10"
             :slides-per-view="2"
@@ -254,5 +254,13 @@ const setThumbsSwiper = (swiper) => {
 }
 .swiper-slide-thumb-active {
   --at-apply: rounded-lg bg-blue-50 border-1 border-primary;
+}
+</style>
+<style scoped>
+.swiper.swiper-testimoni-nav {
+  @apply bg-white my-shadow rounded-4xl py-2 px-3;
+}
+.swiper.swiper-testimoni {
+  @apply mb-8;
 }
 </style>

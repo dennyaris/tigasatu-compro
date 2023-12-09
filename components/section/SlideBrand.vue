@@ -56,6 +56,7 @@ const shuffleBrandsDoubleIt = computed(() => {
 <template>
   <div>
     <Swiper
+      class="swiper-brands"
       :modules="[SwiperAutoplay, SwiperFreeMode]"
       :slides-per-view="'auto'"
       :free-mode="true"
@@ -71,7 +72,7 @@ const shuffleBrandsDoubleIt = computed(() => {
         reverseDirection: props.reverseDirection,
       }"
     >
-      <SwiperSlide v-for="(b, i) in shuffleBrandsDoubleIt" :key="i" class="w-auto">
+      <SwiperSlide v-for="(b, i) in shuffleBrandsDoubleIt" :key="i">
         <div class="bg-white h-20 aspect-[2/1] flex items-center justify-center rounded-2xl ring-1 ring-blue-light shadow px-3 py-2">
           <img class="object-contain max-w-full max-h-full" :src="b.image" :alt="b.title">
         </div>
@@ -79,3 +80,8 @@ const shuffleBrandsDoubleIt = computed(() => {
     </Swiper>
   </div>
 </template>
+<style scoped>
+.swiper-brands .swiper-slide {
+  @apply w-auto;
+}
+</style>
