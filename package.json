@@ -21,6 +21,7 @@
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "^8.54.0",
     "nuxt": "^3.8.2",
+    "nuxt-simple-sitemap": "^4.1.13",
     "volar-service-eslint": "^0.0.17",
     "volar-service-typescript": "^0.0.17",
     "vue": "^3.3.8",

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tigasatumedika.com/sitemap_index.xml

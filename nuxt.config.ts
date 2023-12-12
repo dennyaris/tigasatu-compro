@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     '@nuxtjs/google-fonts',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    'nuxt-simple-sitemap'
   ],
   i18n: {
     debug: false,
