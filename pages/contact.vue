@@ -16,26 +16,18 @@ const setVisibleOnce = (isIntersecting: boolean) => {
 </script>
 
 <template>
-  <section ref="mapSection" class="py-24">
-    <div class="container">
-      <h2 class="text-heading mb-8">
-        {{ $t('contact.h1') }}
-      </h2>
-    </div>
-    <LazyContactIframeMap v-if="mapIsVisible" />
-  </section>
-  <section class="bg-slate-50 py-24 lg:pb-48">
+  <section id="form" class="bg-slate-50 py-24">
     <div class="container">
       <div class="flex flex-col md:flex-row rounded-4xl overflow-hidden shadow">
         <div class="flex flex-col py-20 px-12 md:max-w-1/2 bg-blue-light">
-          <img class="h-8 mb-10 snow-white object-contain w-fit" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
-          <p class="font-semibold text-lg mb-4">
+          <img class="h-12 mb-10 snow-white object-contain w-fit" src="/images/logo-tigasatu.png" alt="Logo Tigasatu Medika Pratama">
+          <p class="font-semibold text-xl mb-4">
             PT Tigasatu Medika Pratama
           </p>
           <p class="tracking-wide">
             Karawaci Office Park Blok G 36, Panunggangan Barat, Kec. Cibodas, Kota Tangerang, Banten 15811, Indonesia
           </p>
-          <div class="mt-10 flex flex-col gap-8">
+          <div class="mt-10 flex flex-col gap-8 text-lg">
             <div class="flex items-center gap-6">
               <span class="rounded-full w-10 h-10 bg-blue-100 flex items-center justify-center">
                 <i class="text-primary i-ph-envelope w-6 h-6 shrink-0" />
@@ -118,6 +110,14 @@ const setVisibleOnce = (isIntersecting: boolean) => {
         </div>
       </div>
     </div>
+  </section>
+  <section ref="mapSection" class="py-24 lg:pb-48">
+    <div class="container">
+      <h2 class="text-heading mb-8">
+        {{ $t('contact.map_title') }}
+      </h2>
+    </div>
+    <LazyContactIframeMap v-if="mapIsVisible" />
   </section>
 </template>
 <style>

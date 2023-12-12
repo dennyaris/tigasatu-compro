@@ -160,7 +160,8 @@
     }
   },
   "contact": {
-    "h1": "View Our Location Here"
+    "title": "Contact Us",
+    "map_title": "View Our Location Here"
   },
   "team": {
     "founder_title": "Founders and Management of The Company",
