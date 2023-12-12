@@ -1,0 +1,52 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install & Build
+        run: |
+          pnpm install
+          pnpm build
+          tar -czf "${GITHUB_SHA}".tar.gz .output
+
+      - name: Store app-artifacts for distribution
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-artifacts
+          path: ${{ github.sha }}.tar.gz
+
+      - name: Build
+        run: pnpm build
