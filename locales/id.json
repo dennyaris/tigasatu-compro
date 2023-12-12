@@ -70,39 +70,70 @@
     ],
     "timelines": [
       {
+        "year": "2016",
+        "month": "November",
+        "title": "Awal Pendirian PT Tigasatu Medika Pratama",
+        "description": "Penerbitan akta pendirian PT Tigasatu Medika Pratama."
+      },
+      {
         "year": "2017",
-        "title": "Establishment and Vision",
-        "description": "PT Tigaasu Medical Pratama was founded with a clear mission: to revolutionize healthcare in Indonesia through superior medical equipment solutions. Our journey began with the promise of excellence and dedication."
+        "month": "Juli",
+        "title": "Partnership dengan GE HealthCare",
+        "description": "Memulai usaha di bidang USG dengan menjalin hubungan bisnis dengan GE."
+      },
+      {
+        "year": "2017",
+        "month": "Agustus",
+        "title": "Penambahan lini bisnis cardio",
+        "description": "Menambah cakupan bisnis ke bidang cardio dengan produk ECG GE."
+      },
+      {
+        "year": "2017",
+        "month": "Agustus",
+        "title": "Partnership dengan PT. Djembatan Dua",
+        "description": "Memulai partnership untuk pendistribusian produk USG dan ECG GE."
+      },
+      {
+        "year": "2017",
+        "month": "Januari",
+        "title": "Penghargaan sebagai Best New Channel Partner – Ultrasound",
+        "description": "Mendapat penghargaan pada acara GE di Singapura tanggal 24-25 Januari."
       },
       {
         "year": "2018",
-        "title": "Building Strong Partnerships",
-        "description": "A year into our venture, we forged pivotal partnerships with top Western medical equipment manufacturers, expanding our offerings in Intervention Cardiology and Electrophysiology."
+        "month": "Juni",
+        "title": "Penambahan lini bisnis diabetic dan Partnership dengan Medtronic",
+        "description": "Mengembangkan usaha ke bidang diabetes dan menjadi distributor Medtronic untuk produk Injection Port dan CGM."
       },
       {
-        "year": "2019",
-        "title": "Official Distribution Milestone",
-        "description": "Achieved the status of the sole official distributor in Indonesia for cutting-edge Insulin-dependent diabetes technology solutions, reinforcing our market presence."
+        "year": "2018",
+        "month": "Oktober",
+        "title": "Penambahan pendistribusian produk Insulin Pump",
+        "description": "Mengenalkan produk insulin pump Medtronic di Indonesia."
       },
       {
         "year": "2020",
-        "title": "Expansion into Dental Excellence",
-        "description": "We broadened our horizons by distributing premier Western and Asian dental equipment, becoming a trusted name in dental healthcare solutions across Greater Jakarta."
-      },
-      {
-        "year": "2021",
-        "title": "24/7 Professional Support",
-        "description": "Introduced round-the-clock professional support, ensuring that our partners and clients receive unmatched service anytime, every time."
-      },
-      {
-        "year": "2022",
-        "title": "Continual Growth and Innovation",
-        "description": "Continuously expanding our product lines and services, we remained at the forefront of healthcare innovation, delivering on our commitment to quality and excellence."
+        "month": "Januari",
+        "title": "Partnership dengan Boston Scientific",
+        "description": "Menambah produk portfolio cardio untuk PCI dan ablasi sebagai distributor Boston Scientific."
       },
       {
         "year": "2023",
-        "title": "Looking Ahead",
-        "description": "As we move forward, PT Tigaasu Medical Pratama continues to set the standard in the healthcare industry, promising to bring more advancements and comprehensive solutions to Indonesia's medical professionals and patients."
+        "month": "April",
+        "title": "Partnership dengan Biotronik",
+        "description": "Menjalin hubungan partnership dengan Biotronik (German) untuk produk-produk seperti drug eluting stent dan coronary balloon."
+      },
+      {
+        "year": "2023",
+        "month": "Maret",
+        "title": "Penambahan lini bisnis dental serta Partnership dengan Mensa Group",
+        "description": "Menambah lini bisnis di bidang dental dan menjalin kerjasama dengan Mensa Group untuk distribusi berbagai produk dental."
+      },
+      {
+        "year": "2023",
+        "month": "Mei",
+        "title": "Partnership dengan PT Mentari Murni Mulia",
+        "description": "Menambah produk-produk dental dengan teknologi terbaru bekerja sama dengan PT Mentari Murni Mulia."
       }
     ],
     "vision": {

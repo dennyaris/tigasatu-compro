@@ -16,7 +16,7 @@ const onActive = (id: number) => {
         </p>
       </div>
       <div class="bg-primary rounded-4xl lg:min-w-3xl mx-auto">
-        <div class="h-50vh w-full relative overflow-y-auto scrollbar-hide snap-y snap-mandatory scroll-smooth">
+        <div class="h-60vh w-full relative overflow-y-auto scrollbar-hide snap-y snap-mandatory scroll-smooth">
           <AboutTimelineSpacer />
           <AboutTimelineItem
             v-for="(timeline, idx) in $tm('about.timelines')"
@@ -24,6 +24,7 @@ const onActive = (id: number) => {
             :idx="idx"
             :title="$rt(timeline.title)"
             :year="$rt(timeline.year)"
+            :month="$rt(timeline.month)"
             :description="$rt(timeline.description)"
             @on-active="onActive"
           />

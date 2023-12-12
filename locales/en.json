@@ -70,39 +70,70 @@
     ],
     "timelines": [
       {
+        "year": "2016",
+        "month": "November",
+        "title": "Establishment of PT Tigasatu Medika Pratama",
+        "description": "Issuance of the establishment deed of PT Tigasatu Medika Pratama."
+      },
+      {
         "year": "2017",
-        "title": "Establishment and Vision",
-        "description": "PT Tigaasu Medical Pratama was founded with a clear mission: to revolutionize healthcare in Indonesia through superior medical equipment solutions. Our journey began with the promise of excellence and dedication."
+        "month": "July",
+        "title": "Partnership with GE",
+        "description": "Began USG business by establishing a business relationship with GE for the first time."
+      },
+      {
+        "year": "2017",
+        "month": "August",
+        "title": "Addition of Cardio Business Line",
+        "description": "Expanded business scope to include cardio with the distribution of GE ECG products."
+      },
+      {
+        "year": "2017",
+        "month": "August",
+        "title": "Partnership with PT. Djembatan Dua",
+        "description": "Started a partnership with PT. Djembatan Dua for the distribution of USG and ECG GE products."
+      },
+      {
+        "year": "2017",
+        "month": "January",
+        "title": "Awarded as Best New Channel Partner – Ultrasound",
+        "description": "Received an award as 'Best New Channel Partner – Ultrasound' at the GE event in Singapore on January 24-25."
       },
       {
         "year": "2018",
-        "title": "Building Strong Partnerships",
-        "description": "A year into our venture, we forged pivotal partnerships with top Western medical equipment manufacturers, expanding our offerings in Intervention Cardiology and Electrophysiology."
+        "month": "June",
+        "title": "Addition of Diabetic Business Line and Partnership with Medtronic",
+        "description": "Expanded into the diabetes sector to serve the growing number of diabetics in Indonesia and became a distributor of Medtronic for Injection Port and Continuous Glucose Monitor (CGM) products."
       },
       {
-        "year": "2019",
-        "title": "Official Distribution Milestone",
-        "description": "Achieved the status of the sole official distributor in Indonesia for cutting-edge Insulin-dependent diabetes technology solutions, reinforcing our market presence."
+        "year": "2018",
+        "month": "October",
+        "title": "Addition of Insulin Pump Product Distribution",
+        "description": "Introduced Medtronic's insulin pump products in Indonesia."
       },
       {
         "year": "2020",
-        "title": "Expansion into Dental Excellence",
-        "description": "We broadened our horizons by distributing premier Western and Asian dental equipment, becoming a trusted name in dental healthcare solutions across Greater Jakarta."
-      },
-      {
-        "year": "2021",
-        "title": "24/7 Professional Support",
-        "description": "Introduced round-the-clock professional support, ensuring that our partners and clients receive unmatched service anytime, every time."
-      },
-      {
-        "year": "2022",
-        "title": "Continual Growth and Innovation",
-        "description": "Continuously expanding our product lines and services, we remained at the forefront of healthcare innovation, delivering on our commitment to quality and excellence."
+        "month": "January",
+        "title": "Partnership with Boston Scientific",
+        "description": "Added to the cardio product portfolio for PCI and ablation procedures by becoming a distributor of Boston Scientific. Distributed PCI products include drug-eluting stents, coronary balloons, and IntraVascular Ultrasound (IVUS). Ablation products include catheters for 2D and 3D ablation procedures."
       },
       {
         "year": "2023",
-        "title": "Looking Ahead",
-        "description": "As we move forward, PT Tigaasu Medical Pratama continues to set the standard in the healthcare industry, promising to bring more advancements and comprehensive solutions to Indonesia's medical professionals and patients."
+        "month": "April",
+        "title": "Partnership with Biotronik",
+        "description": "Formed a partnership with Biotronik (Germany) for products such as drug-eluting stents, coronary balloons, drug-coated balloons, aspiration catheters, and covered stents."
+      },
+      {
+        "year": "2023",
+        "month": "March",
+        "title": "Addition of Dental Business Line and Partnership with Mensa Group",
+        "description": "Expanded into the dental field and formed a partnership with Mensa Group to distribute various dental products such as dental units, panoramic units, periapical units, and daily consumables for dentists."
+      },
+      {
+        "year": "2023",
+        "month": "May",
+        "title": "Partnership with PT Mentari Murni Mulia",
+        "description": "Added state-of-the-art dental products such as those from Kerr, in collaboration with PT Mentari Murni Mulia."
       }
     ],
     "vision": {

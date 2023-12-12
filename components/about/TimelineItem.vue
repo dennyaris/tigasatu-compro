@@ -8,6 +8,11 @@ const props = defineProps({
     type: String,
     required: true
   },
+  month: {
+    type: String,
+    required: false,
+    default: ''
+  },
   title: {
     type: String,
     required: false,
@@ -42,11 +47,16 @@ const emit = defineEmits<{
     :class="[
       { 'is-active': isVisible}
     ]"
-    class="item flex justify-center snap-always snap-center h-1/3 px-8"
+    class="item flex justify-center snap-always snap-center h-1/3 px-4"
   >
-    <div class="year w-20 shrink-0 relative flex items-center border-r-2 border-black">
-      <div class="text-lg mr-4 counter font-bold">
-        {{ year }}
+    <div class="year w-24 shrink-0 relative flex items-center border-r-2 border-black">
+      <div class="text-center w-full mr-4 counter">
+        <div class="text-lg font-bold">
+          {{ year }}
+        </div>
+        <div class="text-base font-semibold">
+          {{ month }}
+        </div>
       </div>
     </div>
     <div ref="timeline" :class="isVisible ? '' : 'filter-grayscale'" class="grow px-3 py-8 flex transition-all duration-400 items-center justify-center snap-always snap-center">
