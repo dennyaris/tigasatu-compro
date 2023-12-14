@@ -27,12 +27,17 @@ export default defineNuxtConfig({
   ssr: true,
   modules: [
     '@unocss/nuxt',
+    '@nuxt/content',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     '@nuxtjs/google-fonts',
     'nuxt-swiper',
     'nuxt-simple-sitemap'
   ],
+  content: {
+    locales: ['en', 'id'],
+    defaultLocale: 'en'
+  },
   i18n: {
     debug: false,
     compilation: {

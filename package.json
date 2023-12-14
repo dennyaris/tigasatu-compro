@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
+    "@nuxt/content": "^2.9.0",
     "nuxt-swiper": "^1.2.2"
   }
 }
