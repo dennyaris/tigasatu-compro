@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:pb-60">
     <div class="container">
-      <ContentDoc v-slot="{ doc }" :query="{ locale }" :path="path">
+      <ContentDoc v-slot="{ doc }: { doc: CareerParsedContent }" :query="{ locale }" :path="path">
         <div>
           <div class="flex border-b-2 border-primary pb-10">
             <img class="h-12 lg:h-24 shrink-0 aspect-square" src="/android-chrome-192x192.png">
@@ -45,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+import type { CareerParsedContent } from '~/types/career'
 const route = useRoute()
 const { locale } = useI18n()
 const localePath = useLocalePath()

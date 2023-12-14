@@ -87,6 +87,7 @@ import {
   PopoverGroup,
   PopoverPanel
 } from '@headlessui/vue'
+import type { CareerParsedContent } from '~/types/career'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
@@ -216,7 +217,7 @@ watchDebounced(
 const { data, refresh } = await useAsyncData(
   'jobs',
   () => {
-    let query = queryContent('career').locale(locale.value)
+    let query = queryContent<CareerParsedContent>('career').locale(locale.value)
 
     if (title.value.trim() !== '') {
       const pattern = new RegExp('\\b' + title.value.split(' ').join('\\b.*\\b'), 'i')
