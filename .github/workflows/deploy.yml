@@ -23,7 +23,7 @@ jobs:
             cd /root/31mp/healthline
             git fetch origin dev
             git checkout dev
-            git pull origin dev
+            git reset --hard origin/dev
             pnpm install
             pnpm build
             pm2 restart TMP-COMPRO
