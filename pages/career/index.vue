@@ -4,14 +4,14 @@
       <div class="flex flex-col md:flex-row justify-between pb-4 mb-12 gap-y-4">
         <div>
           <div class="relative">
-            <label for="name" class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900">Title</label>
+            <label for="name" class="absolute -top-3 left-2 inline-block bg-gray-100 rounded-t px-1 text-sm font-medium text-gray-900">Title</label>
             <input
               id="name"
               v-model="title"
               type="text"
               name="name"
-              class="block min-w-xs w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="Sales"
+              class="block min-w-xs w-full rounded-md border-0 py-2 px-3 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder="Sales, Operation, etc"
             >
           </div>
         </div>
