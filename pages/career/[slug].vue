@@ -23,7 +23,7 @@
           </div>
           <div class="pt-2 flex gap-y-6 flex-col lg:flex-row">
             <ContentRenderer id="content" :value="doc" class="grow pr-4 text-lg" />
-            <div class="min-w-sm bg-blue-light px-4 py-6 rounded-lg">
+            <div class="md:min-w-sm bg-blue-light px-4 py-6 rounded-lg">
               <h2 class="text-xl font-bold mb-6">
                 How to Apply
               </h2>

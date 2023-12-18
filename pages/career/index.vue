@@ -18,7 +18,7 @@
         <PopoverGroup class="-mx-4 flex items-center divide-x divide-gray-200">
           <Popover v-for="section in filters" :key="section.name" class="relative inline-block px-4 text-left">
             <PopoverButton class="group inline-flex justify-center font-medium text-gray-700 hover:text-gray-900">
-              <span class="text-base">{{ section.name }}</span>
+              <span class="text-sm md:text-base">{{ section.name }}</span>
               <i class="i-mdi-chevron-down -mr-1 ml-1 h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" aria-hidden="true" />
             </PopoverButton>
 
@@ -50,8 +50,8 @@
         </PopoverGroup>
       </div>
       <div v-for="job in data" :key="job._path" vocab="https://schema.org/" typeof="JobPosting" class="jobItem">
-        <img class="h-12 lg:h-20 shrink-0 aspect-square" src="/android-chrome-192x192.png">
-        <div class="grow pl-6">
+        <img class="hidden md:block h-20 shrink-0 aspect-square" src="/android-chrome-192x192.png">
+        <div class="grow md:pl-6">
           <div class="mb-4">
             <div class="relative inline pr-2">
               <NuxtLink class="inline" :to="localePath(job._path as string, locale)">
