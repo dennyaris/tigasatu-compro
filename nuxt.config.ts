@@ -77,7 +77,7 @@ export default defineNuxtConfig({
     ]
   },
   nitro: {
-    output: process.env.NODE_ENV === 'production'
+    output: process.env.APP_ENV === 'production'
       ? {
           dir: '.prod',
           serverDir: '.prod/server',

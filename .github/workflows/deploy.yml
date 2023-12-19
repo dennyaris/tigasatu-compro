@@ -50,5 +50,5 @@ jobs:
             git checkout main
             git reset --hard origin/main
             pnpm install
-            pnpm build
+            APP_ENV=production pnpm build
             pm2 restart TMP-COMPRO-PROD
