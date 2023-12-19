@@ -75,5 +75,14 @@ export default defineNuxtConfig({
     transformers: [
       transformerDirectives()
     ]
+  },
+  nitro: {
+    output: process.env.NODE_ENV === 'production'
+      ? {
+          dir: '.prod',
+          serverDir: '.prod/server',
+          publicDir: '.prod/public'
+        }
+      : undefined
   }
 })

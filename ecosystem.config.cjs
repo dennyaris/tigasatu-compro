@@ -1,11 +1,23 @@
 module.exports = {
   apps: [
     {
-      name: 'TMP-COMPRO',
+      name: 'TMP-COMPRO-DEV',
       port: '3000',
       exec_mode: 'cluster',
       instances: 'max',
       script: './.output/server/index.mjs'
+    },
+    {
+      name: 'TMP-COMPRO-PROD',
+      port: '8000',
+      exec_mode: 'cluster',
+      instances: 'max',
+      script: './.output/server/index.mjs',
+      env: {
+        NODE_ENV: 'production',
+        BASE_URL: 'https://tigasatumedika.com',
+        GTAG_ID: 'G-HCZC0XKVF9'
+      }
     }
   ]
 }
