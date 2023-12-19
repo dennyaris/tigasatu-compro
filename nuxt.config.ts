@@ -32,8 +32,12 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/google-fonts',
     'nuxt-swiper',
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
+    'nuxt-gtag'
   ],
+  gtag: {
+    id: process.env.NODE_ENV === 'production' ? process.env.GTAG_ID : undefined
+  },
   content: {
     locales: ['en', 'id'],
     defaultLocale: 'en'
