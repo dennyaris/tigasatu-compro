@@ -3,6 +3,7 @@ import type { LocaleObject } from 'vue-i18n-routing'
 const { locale, locales } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
+const config = useRuntimeConfig()
 
 const locObj = computed(() => {
   return locales.value.find((l) => {
@@ -28,6 +29,12 @@ useHead({
   htmlAttrs: {
     lang: () => locObj.value?.iso
   },
+  meta: [
+    {
+      name: 'version',
+      content: config.public.version
+    }
+  ],
   link: [
     {
       rel: 'alternate',

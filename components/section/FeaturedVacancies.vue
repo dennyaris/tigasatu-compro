@@ -49,7 +49,7 @@ const localePath = useLocalePath()
                     Type
                   </dt>
                   <dd>
-                    <span class="label">{{ $rt(job.workPlace) }}</span> &bull; <span class="label">Full-time</span>
+                    <span class="label capitalize bg-primary">{{ $rt(job.workPlace) }}</span> &bull; <span class="label capitalize bg-secondary">Full-time</span>
                   </dd>
                 </div>
                 <div class="mt-4">

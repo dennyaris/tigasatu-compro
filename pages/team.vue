@@ -1,42 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 const localePath = useLocalePath()
-
-const founders = [
-  {
-    name: 'Hendrik Kianto',
-    title: 'Founder',
-    image: '/images/peoples/hendrik-kianto.png',
-    bio: 'MBA, Harvard Business School. Prior experiences include P&G and McKinsey & Co in strategic management & finance. Business interest in steel, food, and distributions.'
-  },
-  {
-    name: 'Erwin Tenggono',
-    title: 'Co-Founder',
-    image: '/images/peoples/erwin-tenggono.jpg',
-    bio: 'MBA, Prasetya Mulya Business School. Has 31 years senior executive at healthcare Industry. Sought after speaker on management and organization'
-  },
-  {
-    name: 'David Utama',
-    title: 'Co-Founder',
-    image: '/images/peoples/david-utama.png',
-    bio: 'MSc. in Industrial Engineering, Texas A&M University. Prior experiences include 17 years in GE and 12 years in ASEAN. Have a strong ASEAN network.'
-  }
-]
-
-const jobs = [
-  {
-    title: 'Sales Development Representative',
-    overview: "Join our team as a Sales Development Representative where you'll be instrumental in driving our business growth. Your role involves engaging with potential clients, identifying opportunities, and nurturing leads to set the stage for successful sales. You'll harness your communication skills and strategic thinking to create a robust pipeline, contributing directly to our company's success in the competitive healthcare sector.",
-    location: 'Jakarta, Indonesia',
-    workPlace: 'On-site'
-  },
-  {
-    title: 'Software Engineer',
-    overview: "As a Software Engineer, you'll play a pivotal role in developing innovative software solutions that advance healthcare technology. You'll collaborate with cross-functional teams to design, build, and maintain efficient, reusable, and reliable code. Your expertise will be crucial in solving complex technical challenges and delivering high-quality products that make a meaningful impact in the healthcare industry.",
-    location: 'Jakarta, Indonesia',
-    workPlace: 'Remote'
-  }
-]
 </script>
 <template>
   <main class="mb-60">

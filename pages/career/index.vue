@@ -68,7 +68,7 @@
           <div class="flex items-center">
             <i class="i-ph-briefcase w-5 h-5 mr-2 block" />
             <div>
-              <span property="jobLocationType" class="label capitalize">{{ job.jobLocationType }}</span> &bull; <span property="employmentType" class="label capitalize">{{ job.employmentType }}</span>
+              <span property="jobLocationType" class="label capitalize bg-primary">{{ job.jobLocationType }}</span> &bull; <span property="employmentType" class="label capitalize bg-secondary">{{ job.employmentType }}</span>
             </div>
           </div>
           <p class="max-w-4xl mt-4 text-lg" itemprop="description">
@@ -89,7 +89,7 @@ import {
 } from '@headlessui/vue'
 import type { CareerParsedContent } from '~/types/career'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 const jobLocationTypeFilter = [
@@ -206,14 +206,6 @@ watchDebounced(
   { debounce: 500, maxWait: 1000 }
 )
 
-// const { data, pending, error, refresh } = await useAsyncData(
-//   'jobs',
-//   () => queryContent('career').locale(locale.value).where({
-//     employmentType: { $in: checkedEmploymentTypes.value },
-//     employmentUnit: { $in: checkedDepartments.value }
-//   }).find()
-// )
-
 const { data, refresh } = await useAsyncData(
   'jobs',
   () => {
@@ -242,6 +234,11 @@ const { data, refresh } = await useAsyncData(
     deep: false
   }
 )
+
+useSeoMeta({
+  title: t('career.title'),
+  description: t('career.subtitle')
+})
 </script>
 <style lang="postcss" scoped>
 .jobItem {

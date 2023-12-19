@@ -1,0 +1,117 @@
+name: Deploy Production
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    name: "Build & Store app-artifacts"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install & Build dependencies
+        env:
+          TAG_VERSION: ${{ github.ref_name }}
+          NUXT_SITE_URL: 'https://tigasatumedika.com'
+          GTAG_ID: ${{ secrets.GTAG_ID}}
+        run: |
+          touch .env
+          echo NUXT_PUBLIC_VERSION=${{ github.ref_name }} >> .env
+          echo NUXT_SITE_URL=${{ env.NUXT_SITE_URL}} >> .env
+          pnpm install
+          pnpm build
+          cp .env .output/server/.env
+          cp ecosystem.config.production.cjs .output/ecosystem.config.cjs
+          tar -czf "${{ github.ref_name }}".tar.gz .output
+
+      - name: Store app-artifacts for distribution
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-artifacts
+          path: ${{ github.ref_name }}.tar.gz
+
+  deploy:
+    name: "Deploy to DigitalOcean"
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download app-artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: app-artifacts
+
+      - name: Upload app-artifacts
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.DROPLET_PORT }}
+          source: ${{ github.ref_name }}.tar.gz
+          target: /root/deployment/healthline-prod/artifacts
+
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@master
+        env:
+          RELEASE_PATH: /root/deployment/healthline-prod/releases/${{ github.ref_name }}
+          ACTIVE_RELEASE_PATH: /root/deployment/healthline-prod/live
+          TAG_VERSION: ${{ github.ref_name }}
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.DROPLET_PORT }}
+          envs: RELEASE_PATH,ACTIVE_RELEASE_PATH,TAG_VERSION
+          script: |
+            mkdir -p "/root/deployment/healthline-prod/releases/${TAG_VERSION}"
+            tar -xzf "/root/deployment/healthline-prod/artifacts/${TAG_VERSION}.tar.gz" -C "/root/deployment/healthline-prod/releases/${TAG_VERSION}"
+            rm -rf /root/deployment/healthline-prod/artifacts/${TAG_VERSION}.tar.gz
+            ln -s -n -f $RELEASE_PATH $ACTIVE_RELEASE_PATH
+            cd $ACTIVE_RELEASE_PATH/.output && pm2 delete ecosystem.config.cjs && pm2 start ecosystem.config.cjs
+
+  clean-up:
+    name: "Clean up old versions"
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: clean up old releases
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.DROPLET_PORT }}
+          script: |
+            cd /root/deployment/healthline-prod/releases && ls -t -1 | tail -n +4 | xargs rm -rf
+            cd /root/deployment/healthline-prod/artifacts && ls -t -1 | tail -n +4 | xargs rm -rf
+      - uses: geekyeggo/delete-artifact@v2
+        with:
+          name: app-artifacts

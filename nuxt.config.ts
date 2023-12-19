@@ -2,6 +2,10 @@ import { transformerDirectives } from 'unocss'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: 'https://tigasatumedika.com',
+    name: 'Tigasatumedika'
+  },
   app: {
     head: {
       bodyAttrs: {
@@ -16,14 +20,12 @@ export default defineNuxtConfig({
       ]
     }
   },
-  // debug: process.env.NODE_ENV !== 'production',
-  debug: false,
   runtimeConfig: {
     public: {
-      baseURL: process.env.BASE_URL || 'http://localhost:3000'
+      version: process.env.TAG_VERSION || '0.0.0'
     }
   },
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NODE_ENV !== 'production' },
   ssr: true,
   modules: [
     '@unocss/nuxt',
@@ -41,6 +43,12 @@ export default defineNuxtConfig({
   content: {
     locales: ['en', 'id'],
     defaultLocale: 'en'
+  },
+  sitemap: {
+    sources: [
+      '/api/__sitemap__/urls'
+    ],
+    autoLastmod: false
   },
   i18n: {
     debug: false,

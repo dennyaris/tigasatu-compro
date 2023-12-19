@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-useHead({
+useSeoMeta({
   title: t('about.title')
 })
 </script>

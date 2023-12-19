@@ -1,7 +1,9 @@
 ---
-title: "Software Engineer ID"
+title: "Fullstack Software Engineer"
 employmentType: "contract"
+employmentUnit: "technology"
 jobLocation: "Tangerang, Indonesia"
+jobLocationType: "remote"
 ---
 
 ## Job Description
