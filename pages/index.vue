@@ -211,49 +211,54 @@ const setThumbsSwiper = (swiper) => {
   <AboutFaq :show-contact-btn="false" />
   <SectionFeaturedVacancies class="lg:pb-60 bg-slate-50" />
 </template>
-<style>
+<style lang="postcss">
 #testimoni {
-  --at-apply: relative overflow-hidden;
-}
-#testimoni::before {
-  --at-apply: bg-primary rounded-full absolute hidden md:block;
-  content: '';
-  width: 500px;
-  height: 500px;
-  left: -72px;
-  top: -48px;
-}
-#testimoni::after {
-  --at-apply: bg-secondary rounded-full absolute;
-  content: '';
-  width: 480px;
-  height: 480px;
-  left: -99px;
-  bottom: -380px;
+  @apply relative overflow-hidden;
+
+  &::before {
+    @apply bg-primary rounded-full absolute hidden md:block;
+    content: '';
+    width: 500px;
+    height: 500px;
+    left: -72px;
+    top: -48px;
+  }
+
+  &::after {
+    @apply bg-secondary rounded-full absolute;
+    content: '';
+    width: 480px;
+    height: 480px;
+    left: -99px;
+    bottom: -380px;
+  }
 }
 
-#solution-grid > div {
-  position: relative;
-  overflow: hidden;
-}
-#solution-grid > div::before {
-  --at-apply: bg-primary rounded-full absolute;
-  content: '';
-  bottom: -40px;
-  left: -16px;
-  width: 90px;
-  height: 90px;
-}
-#solution-grid > div::after {
-  --at-apply: bg-secondary rounded-full absolute;
-  content: '';
-  left: 60px;
-  bottom: -15px;
-  width: 30px;
-  height: 30px;
+#solution-grid {
+  & > div {
+    @apply relative overflow-hidden
+
+    &::before {
+      @apply bg-primary rounded-full absolute;
+      content: '';
+      width: 500px;
+      height: 500px;
+      left: -72px;
+      top: -48px;
+    }
+
+    &::after {
+      @apply bg-secondary rounded-full absolute;
+      content: '';
+      width: 480px;
+      height: 480px;
+      left: -99px;
+      bottom: -380px;
+    }
+  }
 }
 .swiper-slide-thumb-active {
-  --at-apply: rounded-lg bg-blue-50 border-1 border-primary;
+  @apply rounded-lg bg-blue-50 border-1 border-primary;
 }
 </style>
 <style scoped>

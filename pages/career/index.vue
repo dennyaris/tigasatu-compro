@@ -243,17 +243,20 @@ const { data, refresh } = await useAsyncData(
   }
 )
 </script>
-<style scoped>
+<style lang="postcss" scoped>
 .jobItem {
   @apply flex py-4 px-4 lg:py-8 lg:px-8;
-}
-.jobItem:last-child {
-  border-bottom: none;
-}
-.jobItem:nth-child(odd) {
-  @apply bg-blue-light;
-}
-.jobItem:nth-child(even) {
-  @apply bg-slate-50;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:nth-child(odd) {
+    @apply bg-blue-light;
+  }
+
+  &:nth-child(even) {
+    @apply bg-slate-50;
+  }
 }
 </style>

@@ -52,29 +52,38 @@ const localePath = useLocalePath()
 
 const path = `/career/${route.params.slug}`
 </script>
-<style>
-#content h1, #content h2, #content h3, #content h4 {
-  @apply mt-6 mb-4;
-}
-#content h2 {
-  @apply text-xl font-bold;
-}
-#content h3 {
-  @apply text-lg font-semibold;
-}
-#content h4 {
-  @apply text-base font-bold;
-}
-#content ul {
-  @apply list-disc list-inside;
-}
-#content ol {
-  @apply list-decimal list-inside;
-}
-#content p {
-  @apply mb-4;
-}
-#content img {
-  @apply w-full h-auto mb-4;
+<style lang="postcss">
+#content {
+  h1, h2, h3, h4 {
+    @apply mt-6 mb-4;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-semibold;
+  }
+
+  h4 {
+    @apply text-base font-bold;
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  ol {
+    @apply list-decimal list-inside;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  img {
+    @apply w-full h-auto mb-4;
+  }
 }
 </style>
