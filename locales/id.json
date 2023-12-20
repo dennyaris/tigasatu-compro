@@ -40,7 +40,8 @@
     }
   },
   "about": {
-    "title": "Tentang Kami",
+    "title": "Tentang Tigasatumedika: Ketahui Visi, Misi, dan Nilai Kami",
+    "description": "Cari tahu lebih lanjut mengenai Tigasatumedika. Visi, Misi, dan Nilai-nilai yang kami yakini. Majukan bisnis Anda ke level selanjutnya bersama kami!",
     "hero": {
       "title": "Memajukan Pelayanan Kesehatan Indonesia bersama PT Tigasatu Medika Pratama",
       "paragraphs": [
@@ -160,10 +161,13 @@
     }
   },
   "contact": {
-    "title": "Hubungi Kami",
+    "title": "Hubungi Kami Untuk Pertanyaan Umum dan Lebih Lanjut",
+    "description": "Tetap terhubung dengan Tigasatumedika. Hubungi kami untuk pertanyaan umum, investor, pers, dan berbagai kebutuhan lainnya.",
     "map_title": "Lihat Lokasi Kami Disini"
   },
   "team": {
+    "title": "Temui Tim Kami: Para Profesional yang Berdedikasi di Tigasatumedika",
+    "description": "Temukan para profesional yang penuh semangat di balik Tigasatumedika. Pelajari tentang keahlian, pengalaman, dan komitmen tim kami yang mendorong kesuksesan kami. Kenali orang-orang yang berdedikasi untuk memberikan manfaat dalam segala hal yang kita lakukan.",
     "founder_title": "Pendiri dan Manajemen Perusahaan",
     "founder_subtitle": "Pendiri dan Manajemen kami terdiri dari para profesional berpengalaman dengan keinginan untuk membantu orang lain mencapai tujuan mereka.",
     "founders": [
@@ -217,6 +221,10 @@
       "career": "Karir",
       "contact": "Hubungi Kami"
     }
+  },
+  "career": {
+    "title": "Info karir terbaru di tigasatumedika",
+    "subtitle": "Lihat Lowongan Kerja atau Karir Terbaru untuk Lulusan Baru & Profesional"
   },
   "vacancies": {
     "title": "Kami selalu mencari orang-orang hebat untuk bergabung dengan kami",

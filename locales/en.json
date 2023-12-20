@@ -40,7 +40,8 @@
     }
   },
   "about": {
-    "title": "About Us",
+    "title": "About Tigasatumedika: Knowing Our Vision, Mission and Values",
+    "description": "Find out more about Tigasatumedika. Vision, Mission and Values that we believe in. Take your business to the next level with us!",
     "hero": {
       "title": "Advancing Indonesian Healthcare with PT Tigasatu Medika Pratama",
       "paragraphs": [
@@ -160,10 +161,13 @@
     }
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact Us For General and Further Questions",
+    "description": "Stay connected with Tigasatumedika. Contact us for general inquiries, press and various other needs.",
     "map_title": "View Our Location Here"
   },
   "team": {
+    "title": "Meet Our Team: Dedicated Professionals at Tigasatumedika",
+    "description": "Discover the passionate professionals behind Tigasatumedika. Learn about our team's expertise, experience, and the commitment that drives our success. Get to know the people dedicated to delivering excellence in everything we do.",
     "founder_title": "Founders and Management of The Company",
     "founder_subtitle": "Our Founders and Managements is comprised of experienced professionals with a passion for helping others achieve their goals.",
     "founders": [

@@ -84,6 +84,11 @@ export default defineNuxtConfig({
       transformerDirectives()
     ]
   },
+  postcss: {
+    plugins: {
+      'postcss-nested': {}
+    }
+  },
   nitro: {
     output: process.env.APP_ENV === 'production'
       ? {

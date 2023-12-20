@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const { t } = useI18n()
 useSeoMeta({
-  title: t('about.title')
+  title: t('about.title'),
+  description: t('about.description')
 })
 </script>
 <template>

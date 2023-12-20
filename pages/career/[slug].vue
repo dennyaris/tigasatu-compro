@@ -54,7 +54,7 @@ const path = `/career/${route.params.slug}`
 </script>
 <style lang="postcss">
 #content {
-  h1, h2, h3, h4 {
+  h2, h3, h4 {
     @apply mt-6 mb-4;
   }
 

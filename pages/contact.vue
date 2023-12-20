@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 const contactLabelClass = 'block text-base lg:text-lg font-medium leading-6 text-gray-900'
 
 const mapSection = ref(null)
@@ -13,6 +15,11 @@ const setVisibleOnce = (isIntersecting: boolean) => {
     mapIsVisible.value = true
   }
 }
+
+useSeoMeta({
+  title: t('contact.title'),
+  description: t('contact.description')
+})
 </script>
 
 <template>

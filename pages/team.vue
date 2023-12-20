@@ -1,6 +1,11 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
+
+useSeoMeta({
+  title: t('team.title'),
+  description: t('team.description')
+})
 </script>
 <template>
   <main class="mb-60">

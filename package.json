@@ -27,6 +27,7 @@
     "nuxt-simple-sitemap": "^4.2.0",
     "nuxt-site-config": "^2.1.2",
     "nuxt-site-config-kit": "^2.1.2",
+    "postcss-nested": "^6.0.1",
     "volar-service-eslint": "^0.0.17",
     "volar-service-typescript": "^0.0.17",
     "vue": "^3.3.13",
