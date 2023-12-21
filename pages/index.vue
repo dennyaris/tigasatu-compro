@@ -211,7 +211,7 @@ const setThumbsSwiper = (swiper) => {
   <AboutFaq :show-contact-btn="false" />
   <SectionFeaturedVacancies class="lg:pb-60 bg-slate-50" />
 </template>
-<style lang="postcss">
+<style lang="postcss" scoped>
 #testimoni {
   @apply relative overflow-hidden;
 
@@ -235,36 +235,36 @@ const setThumbsSwiper = (swiper) => {
 }
 
 #solution-grid {
-  & > div {
-    @apply relative overflow-hidden
+  > div {
+    @apply relative overflow-hidden;
 
     &::before {
       @apply bg-primary rounded-full absolute;
       content: '';
-      width: 500px;
-      height: 500px;
-      left: -72px;
-      top: -48px;
+      bottom: -40px;
+      left: -16px;
+      width: 90px;
+      height: 90px;
     }
 
     &::after {
       @apply bg-secondary rounded-full absolute;
       content: '';
-      width: 480px;
-      height: 480px;
-      left: -99px;
-      bottom: -380px;
+      left: 60px;
+      bottom: -15px;
+      width: 30px;
+      height: 30px;
     }
   }
 }
 .swiper-slide-thumb-active {
   @apply rounded-lg bg-blue-50 border-1 border-primary;
 }
-</style>
-<style scoped>
+
 .swiper.swiper-testimoni-nav {
   @apply bg-white my-shadow rounded-4xl py-2 px-3;
 }
+
 .swiper.swiper-testimoni {
   @apply mb-8;
 }

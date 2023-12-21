@@ -32,7 +32,7 @@ const localePath = useLocalePath()
                     </a>
                   </dd>
                 </div>
-                <div class="flex-inline items-center mt-4">
+                <div class="flex-inline items-center mt-3">
                   <i class="i-ph-map-pin w-5 h-5 mr-2 block" />
                   <dt class="sr-only">
                     Location
@@ -52,7 +52,7 @@ const localePath = useLocalePath()
                     <span class="label capitalize bg-primary">{{ $rt(job.workPlace) }}</span> &bull; <span class="label capitalize bg-secondary">Full-time</span>
                   </dd>
                 </div>
-                <div class="mt-4">
+                <div class="mt-3">
                   <dt class="sr-only">
                     Description
                   </dt>
