@@ -93,7 +93,6 @@ jobs:
           script: |
             mkdir -p "/root/deployment/healthline-prod/releases/${TAG_VERSION}"
             tar -xzf "/root/deployment/healthline-prod/artifacts/${TAG_VERSION}.tar.gz" -C "/root/deployment/healthline-prod/releases/${TAG_VERSION}"
-            rm -rf /root/deployment/healthline-prod/artifacts/${TAG_VERSION}.tar.gz
             ln -s -n -f $RELEASE_PATH $ACTIVE_RELEASE_PATH
             cd $ACTIVE_RELEASE_PATH/.output && pm2 delete ecosystem.config.cjs && pm2 start ecosystem.config.cjs
 
@@ -110,8 +109,8 @@ jobs:
           key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
           port: ${{ secrets.DROPLET_PORT }}
           script: |
-            cd /root/deployment/healthline-prod/releases && ls -t -1 | tail -n +4 | xargs rm -rf
-            cd /root/deployment/healthline-prod/artifacts && ls -t -1 | tail -n +4 | xargs rm -rf
+            cd /root/deployment/healthline-prod/releases && ls -t -1 | tail -n +8 | xargs rm -rf
+            cd /root/deployment/healthline-prod/artifacts && ls -t -1 | tail -n +8 | xargs rm -rf
       - uses: geekyeggo/delete-artifact@v2
         with:
           name: app-artifacts
