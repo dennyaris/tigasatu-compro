@@ -318,8 +318,13 @@
     ]
   },
   "diabetic": {
-    "title": "Diabetic Care Technology Solutions for Better Patient Outcomes",
-    "description": "Discover the latest in diabetic care technology at Tigasatu Medika Pratama. Our solutions are designed to improve patient outcomes and quality of life.",
+    "title": "Solusi Teknologi Perawatan Diabetes untuk Hasil Pasien yang Lebih Baik",
+    "description": "Temukan teknologi perawatan diabetes terkini di Tigasatu Medika Pratama. Solusi kami dirancang untuk meningkatkan hasil dan kualitas hidup pasien.",
+    "why": {
+      "label": "Kenapa Memilih Kami",
+      "title": "Solusi Medis Perawatan Diabetes yang Komprehensif",
+      "subtitle": "Pengelolaan Diabetes Lanjutan dan Personal: Mengintegrasikan Perawatan Terdepan, Edukasi, dan Dukungan untuk Meningkatkan Kesejahteraan Pasien"
+    },
     "products": [
       {
         "name": "Insulin Pump",
@@ -339,6 +344,24 @@
         "image": "/products/i-port.jpg",
         "brochure": "https://drive.google.com/file/d/1Cy5cAOy_HFgKQbxZkM-iElZNwHMowBR6/view?usp=sharing"
       }
+    ],
+    "features": [
+      {
+        "name": "Layanan Purna Jual",
+        "description": "Tim dukungan pompa insulin kami yang berdedikasi selalu siap mengunjungi Anda apabila terdapat masalah dengan pompa insulin Anda. Kami menyediakan bantuan komprehensif, pemecahan masalah, dan panduan untuk memastikan perangkat Anda berfungsi secara optimal untuk pengelolaan diabetes yang efektif.",
+        "image": "/images/technical-support.png"
+      },
+      {
+        "name": "WhatsApp Call Center",
+        "description": "Layanan call center yang mudah diakses untuk setiap pertanyaan atau kekhawatiran. Hubungi kami melalui WhatsApp untuk bantuan cepat dan personal dengan pertanyaan perawatan diabetes Anda, informasi produk, atau dukungan lain yang mungkin Anda butuhkan.",
+        "image": "/images/customer-service.png"
+      },
+      {
+        "name": "Pengiriman Cepat",
+        "description": "Layanan pengemasan dan pengiriman yang aman dan terpercaya. Kami memastikan produk perawatan diabetes Anda dikirim dengan cepat dan aman, menjaga standar perawatan tertinggi dari fasilitas kami ke depan pintu Anda.",
+        "image": "/images/delivery.png"
+      }
     ]
+    
   }
 }

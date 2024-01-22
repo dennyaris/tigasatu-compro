@@ -71,10 +71,10 @@ const testimonials = [
   [
     [
       {
-        body: 'Jauh lebih nyaman daripada suntik biasa. Insulin yang setiap beberapa menit masuk ke dalam tubuh saya membuat gula darah saya menjadi lebih stabil.',
+        body: 'Much more comfortable than regular injections. The insulin that enters my body every few minutes makes my blood sugar more stable.',
         author: {
-          name: 'Tasya, 34 Tahun',
-          handle: 'DM1 sejak 11 tahun',
+          name: 'Tasya, 34 Years Old',
+          handle: 'Diabetic Type 1 since 11 years old.',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
@@ -82,7 +82,7 @@ const testimonials = [
       {
         body: 'The Insulin Pump has been a game-changer in managing my diabetes. Its precise control over insulin delivery has helped me maintain my blood sugar levels consistently.',
         author: {
-          name: 'John, 28 Years Old',
+          name: 'Jonas, 31 Years Old',
           handle: 'Diabetic Type 1 for 15 years',
           imageUrl: '/images/peoples/anonymous.png'
         }
@@ -90,10 +90,10 @@ const testimonials = [
     ],
     [
       {
-        body: '<p>Selama pakai pump, selain membantu mengurangi frekuensi suntik, juga membantu mengendalikan gula darah. Ngaa perlu khawatir lagi hipoglikemi Tengah malam atau tinggi di jam setelah sarapan.</p><p>arumnya (cannula) juga meskipun terbuat dari stainless tetapi ngga sakit dan setelah masuk ke kulit tidak berasa. Nyaman untuk dipakai bergerak.</p>',
+        body: '<p>While using the pump, apart from helping reduce the frequency of injections, it also helps control blood sugar. No need to worry about hypoglycemia in the middle of the night or high in the hours after breakfast.</p><p>Even though the cannula is made of stainless steel, it doesnt hurt and once it gets on the skin it doesnt taste. Comfortable for moving around.</p>',
         author: {
-          name: 'Sarah, 28 Tahun',
-          handle: 'DM1 sejak 6 tahun',
+          name: 'Sarah, 28 Years Old',
+          handle: 'Diabetic Type 1 since 6 years old',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
@@ -103,10 +103,10 @@ const testimonials = [
   [
     [
       {
-        body: '<p>Insulin Pump sangat praktis dan memudahkan keseharian saya dalam beraktivitas, ga perlu rpot dan bingung suntuk di tempat umum.</p><p>Gula darahpun menjadi lebih terkontrol dan 70% berada di range target (80-170 mg/dl). Frekuensi hiperglikemi yang sebelumnya mencapai 30% dalam seminggu sekarang berubah menjadi 11%. Highly recommended!</p>',
+        body: '<p>The Insulin Pump is very practical and makes my daily activities easier, no need for hassle and too much confusion in public places.</p><p>Blood sugar is more controlled and 70% is in the target range (80-170 mg/dl ). The frequency of hyperglycemia which previously reached 30% a week has now changed to 11%. Highly recommended!</p>',
         author: {
-          name: 'Claudya, 28 Tahun',
-          handle: 'DM1 sejak 21 tahun',
+          name: 'Claudya, 28 Years Old',
+          handle: 'Diabetic Type 1 since 21 years old',
           imageUrl:
             '/images/peoples/anonymous.png'
         }

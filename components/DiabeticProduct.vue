@@ -27,7 +27,7 @@ const generateWaURL = (name: string) => {
     </div>
     <div class="mt-12 mx-auto max-w-7xl px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
-        <div v-for="(product, idx) in $tm('diabetic.products')" :key="idx" class="w-full flex border rounded-lg px-3 sm:px-4 py-4 sm:py-6 bg-slate-50 drop-shadow overflow-hidden">
+        <div v-for="(product, idx) in $tm('diabetic.products')" :key="idx" class="w-full flex border rounded-lg px-3 sm:px-4 py-4 sm:py-6 bg-slate-50 shadow-lg overflow-hidden">
           <img class="hidden md:block md:w-48 h-auto object-cover" :src="$rt(product.image)" :alt="$rt(product.name)">
           <div class="pl-3 md:pl-4 grow">
             <img class="w-38 h-auto block md:hidden  object-cover" :src="$rt(product.image)" :alt="$rt(product.name)">

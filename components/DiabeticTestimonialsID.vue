@@ -80,10 +80,10 @@ const testimonials = [
         }
       },
       {
-        body: 'The Insulin Pump has been a game-changer in managing my diabetes. Its precise control over insulin delivery has helped me maintain my blood sugar levels consistently.',
+        body: 'Pompa Insulin telah menjadi perubahan besar dalam mengelola diabetes saya. Kontrolnya yang tepat terhadap pengiriman insulin telah membantu saya mempertahankan kadar gula darah saya secara konsisten.',
         author: {
-          name: 'John, 28 Years Old',
-          handle: 'Diabetic Type 1 for 15 years',
+          name: 'John, 31 Tahun',
+          handle: 'DM1 selama 15 tahun',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }
@@ -114,18 +114,18 @@ const testimonials = [
     ],
     [
       {
-        body: "I've found a new sense of freedom since I started using the Insulin Pump. No more frequent injections, and I can enjoy my meals without worry.",
+        body: 'Saya menemukan rasa kebebasan baru sejak saya mulai menggunakan Pompa Insulin. Tidak perlu lagi suntikan yang sering, dan saya dapat menikmati makanan saya tanpa khawatir.',
         author: {
-          name: 'Sarah, 40 Years Old',
-          handle: 'Diagnosed with Type 2 Diabetes',
+          name: 'Sarah, 40 Tahun',
+          handle: 'Terdiagnosis dengan Diabetes Tipe 2',
           imageUrl: '/images/peoples/anonymous.png'
         }
       },
       {
-        body: "The Insulin Pump has transformed the way I manage my diabetes. It's discreet, efficient, and has reduced the number of times I need to check my blood sugar levels.",
+        body: 'Pompa Insulin telah mengubah cara saya mengelola diabetes saya. Ini diskrit, efisien, dan telah mengurangi jumlah kali saya perlu memeriksa kadar gula darah saya.',
         author: {
-          name: 'Alex, 50 Years Old',
-          handle: 'Living with Diabetes for 20 years',
+          name: 'Alex, 50 Tahun',
+          handle: 'Hidup dengan Diabetes selama 20 tahun',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }
