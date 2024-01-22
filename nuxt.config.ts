@@ -77,6 +77,7 @@ export default defineNuxtConfig({
     prefetch: true
   },
   unocss: {
+    uno: true,
     preflight: true,
     attributify: true,
     icons: true,

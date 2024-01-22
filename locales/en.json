@@ -53,20 +53,20 @@
     "faq_subtitle": "If you want to know more about payment products, registration, or solutions to problems you are experiencing, we are always ready to help you. Contact us via social media or the chat button on the right. You can also visit our Help Center.",
     "faqs": [
       {
-        "question": "What is TMP",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "What is Tigasatu Medika Pratama?",
+        "answer": "Tigasatu (in short) is an Indonesian medical device distribution company with special focus on cardiology, dentistry and diabetic care technology. Established in 2016, the company has been appointed by some of the world's most prominent principals to distribute their products throughout Indonesia. One of the main reasons foreign principals choose Tigasatu, is our unwavering commitment to transparency, integrity and professionalism."
       },
       {
-        "question": "What products and services does TMP provide?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "What products and services does Tigasatu provide?",
+        "answer": "Tigasatu (in short) distributes cardiology, dentistry and diabetic care technology products in Indonesia since 2016, providing high quality products at affordable prices in order to promote the development of affodable, high-quality healthcare in Indonesia. We work closely with medical professionals to deepen the public's understanding of the benefits of the medical technology we provide. Tigasatu only distributes officially registered products, and operates a professional supply chain that has been certified by international and Indonesian instances for distribution best practices."
       },
       {
-        "question": "I want to partnership with TMP, how",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "How can i become a business partner with Tigasatu?",
+        "answer": "If you operate or intend to operate a medical device distribution business in a specific part of Indonesia, please contact us for an introduction. Tigasatu encourages independent distributors, freelance resellers and online resellers to become its long-term business partners. If you are an overseas principal looking for a reliable partner to grow your business in Indonesia, please contact us, and we can discuss the best approach to ensure your success."
       },
       {
-        "question": "I want to work at TMP, how?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "I want to work at Tigsatu, how?",
+        "answer": "Tigasatu is constantly looking for young professionals with strong ethical values and ambition to grow their careers within Tigasatu. Headed by people who have a strong reputation as mentors, Tigasatu offers exciting career opportunities for customer-oriented team players."
       }
     ],
     "timelines": [
@@ -189,6 +189,78 @@
         "image": "/images/peoples/christian-van-schoote.png",
         "bio": "MBA, INSEAD. Prior experiences include Director at Delhaize Group, Chief Executive Officer at MAP, Chief Operating Officer at Bhinneka, and Engagement Manager at McKinsey & Co."
       }
+    ],
+    "peoples": [
+      {
+        "name": "Abelio Ravly",
+        "title": "Business Development",
+        "image": null
+      },
+      {
+        "name": "Afristi Meritha",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Andrie Johandry",
+        "title": "Penanggung Jawab Teknis (PJT)",
+        "image": null
+      },
+      {
+        "name": "Anna Ferinta Kristi",
+        "title": "Demand Planner",
+        "image": null
+      },
+      {
+        "name": "Arif Saifudin",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Brandon",
+        "title": "Finance Controller",
+        "image": null
+      },
+      {
+        "name": "Equarto Setyoadhie",
+        "title": "Product Manager",
+        "image": null
+      },
+      {
+        "name": "Erma Lakhsmita",
+        "title": "Accounting & Tax",
+        "image": null
+      },
+      {
+        "name": "Felicia Nata",
+        "title": "Commercial Coordinator",
+        "image": null
+      },
+      {
+        "name": "Hendra Syahputra",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Muhamadun",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Putra Fajar H",
+        "title": "Web & App Developer",
+        "image": null
+      },
+      {
+        "name": "Veronika Erlita",
+        "title": "Finance & Commercial Controller",
+        "image": null
+      },
+      {
+        "name": "Yansen Muslimin",
+        "title": "Sales Executive",
+        "image": null
+      }
     ]
   },
   "menu": {
@@ -244,5 +316,33 @@
         "workPlace": "Remote"
       }
     ]
+  },
+  "cardio": {
+    "title": "Advanced Cardiology and Heart Care Medical Equipment Solutions",
+    "description": "Explore cutting-edge cardiology equipment at Tigasatu Medika Pratama. Offering the latest in heart care technology, our solutions are designed for superior patient care and outcomes."
+  },
+  "diabetic": {
+    "title": "Diabetic Care Technology Solutions for Better Patient Outcomes",
+    "description": "Discover the latest in diabetic care technology at Tigasatu Medika Pratama. Our solutions are designed to improve patient outcomes and quality of life.",
+    "products": [
+      {
+        "name": "Insulin Pump",
+        "description": "An electronic device that automatically delivers insulin into the body. It requires 2 consumables: a reservoir (to store insulin fluid) and an infusion set (a tube to transfer insulin from the pump into the body).",
+        "image": "/products/insulin-pump.jpg",
+        "brochure": "https://drive.google.com/file/d/17twx0i8DWCxojh1hqlhIY9a2vynRT0-z/view?usp=sharing"
+      },
+      {
+        "name": "Continuous Glucose Monitor",
+        "description": "A device for continuous blood glucose monitoring with glucose readings taken at regular intervals.",
+        "image": "/products/continuous-glucose-monitor.png",
+        "brochure": "https://drive.google.com/file/d/1BRB7iPi9UwwWq5MFEX7i7_-gJJlZsisr/view?usp=sharing"
+      },
+      {
+        "name": "I-Port",
+        "description": "An injection port used to reduce the number of direct injections into the body.",
+        "image": "/products/i-port.jpg",
+        "brochure": "https://drive.google.com/file/d/1Cy5cAOy_HFgKQbxZkM-iElZNwHMowBR6/view?usp=sharing"
+      }
+    ]    
   }
 }

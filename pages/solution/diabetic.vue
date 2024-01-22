@@ -1,5 +1,15 @@
+<script setup lang="ts">
+const { t, locale } = useI18n()
+useSeoMeta({
+  title: t('diabetic.title'),
+  description: t('diabetic.description')
+})
+</script>
 <template>
-  <h1 class="text-center text-4xl font-bold mt-40 mb-80">
-    Diabetic Solution
-  </h1>
+  <DiabeticFeature />
+  <DiabeticProduct />
+  <section class="bg-white py-24 sm:py-32">
+    <CardioTestimonials v-if="locale === 'en'" />
+    <CardioTestimonialsID v-else />
+  </section>
 </template>
