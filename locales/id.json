@@ -53,20 +53,20 @@
     "faq_subtitle": "Apabila Anda ingin mengetahui lebih lanjut mengenai produk pembayaran, pendaftaran, atau solusi atas kendala yang dialami, kami selalu siap membantu Anda. Hubungi kami lewat media sosial atau tombol chat di sebelah kanan. Anda juga dapat mengunjungi Pusat Bantuan kami.",
     "faqs": [
       {
-        "question": "What is TMP",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "Apa itu Tigasatu Medika Pratama?",
+        "answer": "Tigasatu (disingkat) adalah perusahaan distribusi alat kesehatan Indonesia dengan fokus khusus pada teknologi kardiologi, kedokteran gigi, dan perawatan diabetes. Didirikan pada tahun 2016, perusahaan ini telah ditunjuk oleh beberapa prinsipal terkemuka di dunia untuk mendistribusikan produk mereka di seluruh Indonesia. Salah satu alasan utama prinsipal asing memilih Tigasatu, adalah komitmen kami yang tak tergoyahkan terhadap transparansi, integritas, dan profesionalisme."
       },
       {
-        "question": "What is TMP",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "Produk dan layanan apa saja yang disediakan oleh Tigasatu?",
+        "answer": "Tigasatu (disingkat) mendistribusikan produk teknologi kardiologi, kedokteran gigi, dan perawatan diabetes di Indonesia sejak 2016, menyediakan produk berkualitas tinggi dengan harga terjangkau untuk mendorong pengembangan layanan kesehatan berkualitas tinggi dan terjangkau di Indonesia. Kami bekerja erat dengan para profesional medis untuk memperdalam pemahaman masyarakat tentang manfaat teknologi medis yang kami sediakan. Tigasatu hanya mendistribusikan produk yang terdaftar secara resmi, dan mengoperasikan rantai pasokan profesional yang telah disertifikasi oleh lembaga internasional dan Indonesia untuk praktik distribusi terbaik."
       },
       {
-        "question": "I want to partnership with TMP, how",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "Bagaimana saya bisa menjadi mitra bisnis dengan Tigasatu?",
+        "answer": "Jika Anda mengoperasikan atau berniat mengoperasikan bisnis distribusi alat kesehatan di bagian tertentu dari Indonesia, silakan hubungi kami untuk perkenalan. Tigasatu mendorong distributor independen, reseller lepas, dan reseller online untuk menjadi mitra bisnis jangka panjang kami. Jika Anda adalah prinsipal dari luar negeri yang mencari mitra tepercaya untuk mengembangkan bisnis Anda di Indonesia, silakan hubungi kami, dan kita dapat membahas pendekatan terbaik untuk memastikan kesuksesan Anda."
       },
       {
-        "question": "I want to work at TMP, how?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "question": "Saya ingin bekerja di Tigsatu, bagaimana caranya?",
+        "answer": "Tigasatu terus mencari profesional muda dengan nilai-nilai etika yang kuat dan ambisi untuk mengembangkan karier mereka di dalam Tigasatu. Dipimpin oleh orang-orang yang memiliki reputasi kuat sebagai mentor, Tigasatu menawarkan peluang karier yang menarik bagi pemain tim yang berorientasi pada pelanggan."
       }
     ],
     "timelines": [
@@ -189,6 +189,78 @@
         "image": "/images/peoples/christian-van-schoote.png",
         "bio": "MBA, INSEAD. Pengalaman sebelumnya termasuk Direktur di Delhaize Group, Chief Executive Officer di MAP, Chief Operating Officer di Bhinneka, dan Engagement Manager di McKinsey &Co."
       }
+    ],
+    "peoples": [
+      {
+        "name": "Abelio Ravly",
+        "title": "Business Development",
+        "image": null
+      },
+      {
+        "name": "Afristi Meritha",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Andrie Johandry",
+        "title": "Penanggung Jawab Teknis (PJT)",
+        "image": null
+      },
+      {
+        "name": "Anna Ferinta Kristi",
+        "title": "Demand Planner",
+        "image": null
+      },
+      {
+        "name": "Arif Saifudin",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Brandon",
+        "title": "Finance Controller",
+        "image": null
+      },
+      {
+        "name": "Equarto Setyoadhie",
+        "title": "Product Manager",
+        "image": null
+      },
+      {
+        "name": "Erma Lakhsmita",
+        "title": "Accounting & Tax",
+        "image": null
+      },
+      {
+        "name": "Felicia Nata",
+        "title": "Commercial Coordinator",
+        "image": null
+      },
+      {
+        "name": "Hendra Syahputra",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Muhamadun",
+        "title": "Sales Executive",
+        "image": null
+      },
+      {
+        "name": "Putra Fajar H",
+        "title": "Web & App Developer",
+        "image": null
+      },
+      {
+        "name": "Veronika Erlita",
+        "title": "Finance & Commercial Controller",
+        "image": null
+      },
+      {
+        "name": "Yansen Muslimin",
+        "title": "Sales Executive",
+        "image": null
+      }
     ]
   },
   "menu": {
@@ -242,6 +314,30 @@
         "overview": "Sebagai Insinyur Perangkat Lunak, Anda akan memainkan peran penting dalam mengembangkan solusi perangkat lunak inovatif yang maju untuk teknologi kesehatan. Anda akan bekerja sama dengan tim lintas fungsi untuk merancang, membangun, dan memelihara kode yang efisien, dapat digunakan kembali, dan handal. Keahlian Anda akan sangat penting dalam menyelesaikan tantangan teknis yang kompleks dan menyampaikan produk berkualitas tinggi yang memberikan dampak signifikan dalam industri kesehatan.",
         "location": "Jakarta, Indonesia",
         "workPlace": "Remote"
+      }
+    ]
+  },
+  "diabetic": {
+    "title": "Diabetic Care Technology Solutions for Better Patient Outcomes",
+    "description": "Discover the latest in diabetic care technology at Tigasatu Medika Pratama. Our solutions are designed to improve patient outcomes and quality of life.",
+    "products": [
+      {
+        "name": "Insulin Pump",
+        "description": "Perangkat elektronik yang secara otomatis menyalurkan insulin ke dalam tubuh. Terdapat 2 consumables yang dibutuhkan: reservoir (untuk menyimpan cairan insulin) dan infusion set (selang untuk menyalurkan insulin dari pump ke dalam tubuh).",
+        "image": "/products/insulin-pump.jpg",
+        "brochure": "https://drive.google.com/file/d/17twx0i8DWCxojh1hqlhIY9a2vynRT0-z/view?usp=sharing"
+      },
+      {
+        "name": "Continuous Glucose Monitor",
+        "description": "Alat pemantau gula darah secara kontinu dengan interval waktu pembacaan gula setiap beberapa menit.",
+        "image": "/products/continuous-glucose-monitor.png",
+        "brochure": "https://drive.google.com/file/d/1BRB7iPi9UwwWq5MFEX7i7_-gJJlZsisr/view?usp=sharing"
+      },
+      {
+        "name": "I-Port",
+        "description": "Injeksi port yang digunakan untuk mengurangi suntikan atau injeksi langsung ke dalam tubuh.",
+        "image": "/products/i-port.jpg",
+        "brochure": "https://drive.google.com/file/d/1Cy5cAOy_HFgKQbxZkM-iElZNwHMowBR6/view?usp=sharing"
       }
     ]
   }

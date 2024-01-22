@@ -30,7 +30,7 @@ function hideOther (index: number) {
           <DisclosureButton
             :ref="_ => (elements[idx] = close)"
             :class="open ? 'bg-[#d2eaff] text-black' : 'mb-4 bg-white text-primary border-b border-b-gray-200'"
-            class="accordion flex w-full justify-between rounded-t-3xl px-8 py-6 text-left text-xl !leading-none tracking-wide font-medium focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75"
+            class="accordion flex w-full justify-between rounded-t-3xl px-8 py-6 text-left text-xl !leading-none tracking-wide font-semibold focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75"
             @click="hideOther(idx)"
           >
             <span>{{ $rt(item.question) }}</span>
@@ -39,7 +39,7 @@ function hideOther (index: number) {
               class="h-6 w-6 i-mdi-chevron-down-circle-outline shrink-0"
             />
           </DisclosureButton>
-          <DisclosurePanel :class="open ? 'mb-4' : ''" class="px-6 py-6 text-base text-gray-500 bg-blue-light rounded-b-3xl">
+          <DisclosurePanel :class="open ? 'mb-4' : ''" class="px-6 py-6 text-lg text-gray-600 bg-blue-light rounded-b-3xl">
             {{ $rt(item.answer) }}
           </DisclosurePanel>
         </Disclosure>

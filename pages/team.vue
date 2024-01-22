@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ucwords } from '~/utils/string'
+
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
@@ -42,13 +44,16 @@ useSeoMeta({
             </p>
           </div>
           <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
-            <li v-for="n in 10" :key="n">
-              <img class="mx-auto h-30 w-30 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
+            <li v-for="(people, idx) in $tm('team.peoples')" :key="idx">
+              <img v-if="false" class="mx-auto h-30 w-30 rounded-full object-cover" src="/images/peoples/test-pp.jpeg" :alt="$rt(people.name)">
+              <div v-else class="mx-auto h-28 w-28 rounded-full tracking-widest bg-primary border-4 border-secondary text-white text-4xl font-bold flex flex-center">
+                {{ getInitials($rt(people.name)) }}
+              </div>
               <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Michael Foster
+                {{ $rt(people.name) }}
               </h3>
-              <p class="text-sm leading-6 text-gray-600">
-                Designer
+              <p class="text-sm leading-tight text-gray-600">
+                {{ $rt(people.title) }}
               </p>
             </li>
           </ul>
