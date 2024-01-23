@@ -2,7 +2,12 @@ export const ucwords = (str: string|null): string => {
   return (str && capitalizeHelper(str, true, true)) || ''
 }
 
-export function getInitials (fullName) {
+export const generateWaURL = (name: string): string => {
+  const message = encodeURIComponent(`Hai, saya tertarik dengan ${name}. Bisakah Anda memberi saya rincian lebih lanjut?`)
+  return `https://api.whatsapp.com/send?phone=628981203131&text=${message}`
+}
+
+export function getInitials (fullName: string) {
   const [firstName, ...restNames] = fullName.toUpperCase().trim().split(' ')
 
   if (!restNames.length) {
@@ -10,7 +15,7 @@ export function getInitials (fullName) {
   }
 
   const firstNameInitial = firstName[0]
-  const lastNameInitial = restNames.pop()[0]
+  const lastNameInitial = restNames.pop()![0]
 
   return `${firstNameInitial}${lastNameInitial}`
 }

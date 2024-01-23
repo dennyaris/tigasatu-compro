@@ -15,24 +15,27 @@ const localePath = useLocalePath()
         <p class="mt-6 text-lg leading-8 text-gray-600">
           At Tigasatu Medika Pratama, we're committed to providing innovative medical products that enhance patient care and improve outcomes. Explore our range of featured products and discover how we're making a difference in healthcare. For more information, please
           <NuxtLink class="underline text-primary font-medium" :to="localePath('/contact', locale)">
-            contact us
-          </NuxtLink>.
+            contact us.
+          </NuxtLink>
         </p>
       </div>
     </div>
     <div class="mt-12 mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
-        <div v-for="(product, idx) in $tm('diabetic.products')" :key="idx" class="w-full flex border rounded-lg px-3 sm:px-4 py-4 sm:py-6 bg-slate-50 shadow-lg overflow-hidden">
-          <img class="hidden md:block md:w-48 h-auto object-cover" :src="$rt(product.image)" :alt="$rt(product.name)">
-          <div class="pl-3 md:pl-4 grow">
-            <img class="w-38 h-auto block md:hidden  object-cover" :src="$rt(product.image)" :alt="$rt(product.name)">
-            <h3 class="product-name text-primary font-semibold text-2xl mb-3">
+      <div class="grid grid-cols-1 gap-4 md:gap-6">
+        <div v-for="(product, idx) in $tm('cardio.products')" :key="idx" class="w-full flex border rounded-lg bg-slate-50 shadow-lg overflow-hidden">
+          <img class="hidden md:block w-1/2 h-auto object-cover hover:brightness-110" :src="$rt(product.image)" :alt="$rt(product.name)">
+          <div class="px-3 sm:px-4 py-4 sm:py-6 grow">
+            <img class="w-48 h-auto block md:hidden  object-cover mb-3" :src="$rt(product.image)" :alt="$rt(product.name)">
+            <h3 class="product-name text-primary font-semibold text-2xl mb-1">
               {{ $rt(product.name) }}
             </h3>
+            <p class="text-xl font-medium leading-tight text-gray-400 mb-4">
+              {{ $rt(product.subtitle) }}
+            </p>
             <p class="text-base md:text-lg text-gray-600 leading-snug">
               {{ $rt(product.description) }}
             </p>
-            <div class="flex gap-3 mt-4">
+            <div class="flex gap-3 mt-6">
               <NuxtLink target="_blank" rel="nofollow noopener" class="inline-flex flex-center px-3 py-2 text-sm font-semibold leading-5 text-white bg-primary rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" :to="$rt(product.brochure)">
                 <i class="i-ph-file-pdf w-6 h-6 inline-block text-white" />
                 <span class="ml-2">E-Brochure</span>

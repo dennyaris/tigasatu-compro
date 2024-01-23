@@ -8,7 +8,7 @@ const localePath = useLocalePath()
   <Menu as="li" class="relative inline-block text-left">
     <div class="dropdown-btn px-2 py-1.5" :class="{'active': $route.matched.some(({ path }) => path.startsWith('/solution'))}">
       <MenuButton
-        class="flex items-center font-semibold tracking-wide hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/75"
+        class="flex items-center font-semibold tracking-wide focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/75"
       >
         {{ $t('menu.solution') }}
         <i
@@ -51,8 +51,16 @@ const localePath = useLocalePath()
     </transition>
   </Menu>
 </template>
-<style>
+<style lang="postcss">
 .dropdown-btn.active {
   @apply bg-primary text-white rounded-lg;
+
+  &:hover {
+    @apply !text-white;
+  }
+}
+
+.dropdown-btn:not(.active) {
+  @apply hover:text-secondary;
 }
 </style>

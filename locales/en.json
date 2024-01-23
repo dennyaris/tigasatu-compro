@@ -319,7 +319,59 @@
   },
   "cardio": {
     "title": "Advanced Cardiology and Heart Care Medical Equipment Solutions",
-    "description": "Explore cutting-edge cardiology equipment at Tigasatu Medika Pratama. Offering the latest in heart care technology, our solutions are designed for superior patient care and outcomes."
+    "description": "Explore cutting-edge cardiology equipment at Tigasatu Medika Pratama. Offering the latest in heart care technology, our solutions are designed for superior patient care and outcomes.",
+    "why": {
+      "label": "Why Choose Us",
+      "title": "Advanced Cardiology Solutions for Modern Healthcare",
+      "subtitle": "We are dedicated to providing a satisfying customer experience, and understand that every heartbeat you have is precious."
+    },
+    "products": [
+      {
+        "name": "PK Papyrus®",
+        "subtitle": "Covered Coronary Stent System",
+        "description": "Designed to deliver more like a conventional stent",
+        "image": "/products/pk-papyrus.png",
+        "brochure": "https://biotronik.cdn.mediamid.com/cdn_bio_doc/bio30729/52803/bio30729.pdf"
+      },
+      {
+        "name": "Pantera® Pro",
+        "subtitle": "Semi-Compliant Workhorse Balloon",
+        "description": "Indicated for dilatation of coronary artery or bypass graft stenosis.* Challenging lesions require a versatile workhorse balloon. Whether it's a tight lesion or a complex bifurcation, Pantera Pro offers the performance to reach, cross and dilate. *Indication: For balloon dilatation of the stenotic portion of a coronary artery or bypass graft stenosis for the purpose of improving myocardial perfusion.",
+        "image": "/products/pantera-pro.jpeg",
+        "brochure": "https://drive.google.com/file/d/1ysSnAuusR4PIFxGj46zPkjaWcMcot2l7/view?usp=sharing"
+      },
+      {
+        "name": "Pantera® LEO",
+        "subtitle": "Low Compliance Coronary Balloon",
+        "description": "For stent post- and pre-dilatation of resistant lesions. With its low compliance and reduced longitudinal balloon growth, Pantera LEO is tailored to stent post- and pre-dilatation of resistant lesions. *Indication: For balloon dilatation of the stenotic portion of a coronary artery or bypass graft stenosis for the purpose of improving myocardial perfusion and for post dilatation of coronary stents.",
+        "image": "/products/pantera-leo.png",
+        "brochure": "https://drive.google.com/file/d/10KPKxS_XiQFFsWdedWEXsIR-6XYki04I/view?usp=sharing"
+      },
+      {
+        "name": "Orsiro® Mission DES",
+        "subtitle": "Thinnest Drug-Eluting Stent System Offering Enhanced Deliverability",
+        "description": "Orsiro® Mission is a new drug-eluting stent system that offers advanced deliverability and an ultrathin strut design considered the thinnest available in the United States. It features the same proprietary design and innovative bioabsorbable coating with controlled drug release as the Orsiro stent. Improvements to the new Orsiro Mission DES system include a re-engineered delivery system and a new deep embedding process to improve deliverability further, including ‘best in class’ trackability and crossability",
+        "image": "/products/orsiro-mission.jpeg",
+        "brochure": "https://us.orsiro.com/sites/default/files/2021-09/Orsiro_Mission_Brochure_463589_Rev_A_BINC_EN_Jun_2021_DV.pdf"
+      }
+    ],
+    "features": [
+      {
+        "name": "After Sales Service",
+        "description": "Our dedicated insulin pump support team is always ready to visit in case of any issues with your insulin pump. We provide comprehensive assistance, troubleshooting, and guidance to ensure your device functions optimally for effective diabetes management.",
+        "image": "/images/technical-support.png"
+      },
+      {
+        "name": "WhatsApp Call Center",
+        "description": "Accessible call center services for any inquiries or concerns. Contact us via WhatsApp for prompt and personalized assistance with your diabetes care questions, product information, or any other support you might need.",
+        "image": "/images/customer-service.png"
+      },
+      {
+        "name": "Fast Delivery",
+        "description": "Reliable and secure packaging and delivery services. We ensure your diabetes care products are delivered swiftly and safely, maintaining the highest standards of care from our facility to your doorstep.",
+        "image": "/images/delivery.png"
+      }
+    ]
   },
   "diabetic": {
     "title": "Diabetic Care Technology Solutions for Better Patient Outcomes",
@@ -365,6 +417,6 @@
         "description": "Reliable and secure packaging and delivery services. We ensure your diabetes care products are delivered swiftly and safely, maintaining the highest standards of care from our facility to your doorstep.",
         "image": "/images/delivery.png"
       }
-    ]    
+    ] 
   }
 }

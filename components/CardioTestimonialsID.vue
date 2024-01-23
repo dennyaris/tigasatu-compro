@@ -8,10 +8,10 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-secondary">
           Testimoni
         </h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
           Kami telah bekerja dengan ratusan orang luar biasa
         </p>
       </div>
@@ -27,7 +27,7 @@
                 {{ featuredTestimonial.author.name }}
               </div>
               <div class="text-gray-600">
-                {{ `@${featuredTestimonial.author.handle}` }}
+                {{ `${featuredTestimonial.author.handle}` }}
               </div>
             </div>
             <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="">
@@ -36,17 +36,15 @@
         <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
           <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
             <figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
-              <blockquote class="text-gray-900">
-                <p>{{ `“${testimonial.body}”` }}</p>
-              </blockquote>
+              <blockquote class="testimony-body text-gray-900" v-html="testimonial.body" />
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="">
                 <div>
-                  <div class="font-semibold">
+                  <div class="font-semibold leading-tight mb-1.5">
                     {{ testimonial.author.name }}
                   </div>
-                  <div class="text-gray-600">
-                    {{ `@${testimonial.author.handle}` }}
+                  <div class="text-sm text-gray-600 leading-tight">
+                    {{ testimonial.author.handle }}
                   </div>
                 </div>
               </figcaption>
@@ -60,85 +58,79 @@
 
 <script setup>
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: 'Synsiro Pro: "Good deliverability, clear marker, max post dilatation"',
   author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
+    name: 'Dr. Muhammad Andi Yassiin, Sp.JP',
+    handle: 'RS Jakarta Heart Center',
     imageUrl:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-    logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg'
+      '/images/peoples/anonymous.png',
+    logoUrl: '/images/clients/mayapada-hospital.png'
   }
 }
 const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Orsiro Mission: "Ok, Good"',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
+          name: 'Dr. Todung Donald Aposan Silalahi, Sp.PD-KKV',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+            '/images/peoples/anonymous.png'
         }
       },
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Orsiro Mission: "Good deliverability"',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
-          imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+          name: 'Dr. Muhammad Munawar, Sp.JP (K)',
+          handle: 'RS Jantung Binawaluya',
+          imageUrl: '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ],
     [
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: 'Synsiro Pro: "Gentle and Good Deliverability"',
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Dr. Robert Noldy Ngantund, Sp.PD, KKV, FINASIM',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+            '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ]
   ],
   [
     [
       {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+        body: 'Orsiro Mission: "Good Deliverability"',
         author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
+          name: 'Dr. Wahyu Aditya Soedarsono, Sp.JP',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+            '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: 'Orsiro Mission: "Good Deliverability"',
         author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-        }
-      },
-      {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-        author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+          name: 'Dr. Emanoel Oepangat, Sp.JP, FIHA',
+          handle: 'RS Siloam TB Simatupang',
+          imageUrl: '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ]
   ]
 ]
 </script>
+<style lang="postcss">
+.testimony-body {
+  @apply relative leading-snug;
+
+  p {
+    @apply mb-3;
+  }
+}
+</style>
