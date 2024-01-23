@@ -7,7 +7,7 @@ useSeoMeta({
 </script>
 <template>
   <CardioFeature />
-  <DiabeticProduct />
+  <CardioProduct />
   <section class="bg-white py-24 sm:py-32">
     <CardioTestimonials v-if="locale === 'en'" />
     <CardioTestimonialsID v-else />

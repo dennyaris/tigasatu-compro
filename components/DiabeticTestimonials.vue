@@ -9,10 +9,10 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center">
         <h2 class="text-lg font-semibold leading-8 tracking-tight text-secondary">
-          Testimoni
+          Testimonials
         </h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-          Kami telah bekerja dengan ratusan orang luar biasa
+          <span class="font-semibold">Transforming Lives:</span> Hear from Hundreds of Our Satisfied Users
         </p>
       </div>
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -27,7 +27,7 @@
                 {{ featuredTestimonial.author.name }}
               </div>
               <div class="text-gray-600">
-                {{ `${featuredTestimonial.author.handle}` }}
+                {{ `@${featuredTestimonial.author.handle}` }}
               </div>
             </div>
             <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="">
@@ -40,7 +40,7 @@
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="">
                 <div>
-                  <div class="font-semibold leading-tight mb-1.5">
+                  <div class="font-semibold">
                     {{ testimonial.author.name }}
                   </div>
                   <div class="text-sm text-gray-600 leading-tight">
@@ -58,10 +58,10 @@
 
 <script setup>
 const featuredTestimonial = {
-  body: 'Synsiro Pro: "Good deliverability, clear marker, max post dilatation"',
+  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
   author: {
-    name: 'Dr. Muhammad Andi Yassiin, Sp.JP',
-    handle: 'RS Jakarta Heart Center',
+    name: 'Brenna Goyette',
+    handle: 'brennagoyette',
     imageUrl:
       '/images/peoples/anonymous.png',
     logoUrl: '/images/clients/mayapada-hospital.png'
@@ -71,29 +71,29 @@ const testimonials = [
   [
     [
       {
-        body: 'Orsiro Mission: "Ok, Good"',
+        body: 'Much more comfortable than regular injections. The insulin that enters my body every few minutes makes my blood sugar more stable.',
         author: {
-          name: 'Dr. Todung Donald Aposan Silalahi, Sp.PD-KKV',
-          handle: 'RS Jakarta Heart Center',
+          name: 'Tasya, 34 Years Old',
+          handle: 'Diabetic Type 1 since 11 years old.',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
       },
       {
-        body: 'Orsiro Mission: "Good deliverability"',
+        body: 'The Insulin Pump has been a game-changer in managing my diabetes. Its precise control over insulin delivery has helped me maintain my blood sugar levels consistently.',
         author: {
-          name: 'Dr. Muhammad Munawar, Sp.JP (K)',
-          handle: 'RS Jantung Binawaluya',
+          name: 'Jonas, 31 Years Old',
+          handle: 'Diabetic Type 1 for 15 years',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }
     ],
     [
       {
-        body: 'Synsiro Pro: "Gentle and Good Deliverability"',
+        body: '<p>While using the pump, apart from helping reduce the frequency of injections, it also helps control blood sugar. No need to worry about hypoglycemia in the middle of the night or high in the hours after breakfast.</p><p>Even though the cannula is made of stainless steel, it doesnt hurt and once it gets on the skin it doesnt taste. Comfortable for moving around.</p>',
         author: {
-          name: 'Dr. Robert Noldy Ngantund, Sp.PD, KKV, FINASIM',
-          handle: 'RS Jakarta Heart Center',
+          name: 'Sarah, 28 Years Old',
+          handle: 'Diabetic Type 1 since 6 years old',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
@@ -103,10 +103,10 @@ const testimonials = [
   [
     [
       {
-        body: 'Orsiro Mission: "Good Deliverability"',
+        body: '<p>The Insulin Pump is very practical and makes my daily activities easier, no need for hassle and too much confusion in public places.</p><p>Blood sugar is more controlled and 70% is in the target range (80-170 mg/dl ). The frequency of hyperglycemia which previously reached 30% a week has now changed to 11%. Highly recommended!</p>',
         author: {
-          name: 'Dr. Wahyu Aditya Soedarsono, Sp.JP',
-          handle: 'RS Jakarta Heart Center',
+          name: 'Claudya, 28 Years Old',
+          handle: 'Diabetic Type 1 since 21 years old',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
@@ -114,10 +114,18 @@ const testimonials = [
     ],
     [
       {
-        body: 'Orsiro Mission: "Good Deliverability"',
+        body: "I've found a new sense of freedom since I started using the Insulin Pump. No more frequent injections, and I can enjoy my meals without worry.",
         author: {
-          name: 'Dr. Emanoel Oepangat, Sp.JP, FIHA',
-          handle: 'RS Siloam TB Simatupang',
+          name: 'Sarah, 40 Years Old',
+          handle: 'Diagnosed with Type 2 Diabetes',
+          imageUrl: '/images/peoples/anonymous.png'
+        }
+      },
+      {
+        body: "The Insulin Pump has transformed the way I manage my diabetes. It's discreet, efficient, and has reduced the number of times I need to check my blood sugar levels.",
+        author: {
+          name: 'Alex, 50 Years Old',
+          handle: 'Living with Diabetes for 20 years',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }

@@ -150,14 +150,26 @@ const handleClick = () => {
     </Dialog>
   </header>
 </template>
-<style scoped>
-.main-menu .router-link-active {
-  @apply bg-primary text-white rounded-lg;
-}
-.main-menu .active-secondary {
-  @apply text-secondary;
-}
-.main-menu .router-link-active.active-secondary {
-  @apply bg-secondary text-white rounded-lg;
+<style lang="postcss" scoped>
+.main-menu {
+  .router-link-active {
+    @apply bg-primary text-white rounded-lg;
+
+    &::hover {
+      @apply text-white;
+    }
+  }
+
+  .active-secondary {
+    @apply text-secondary;
+
+    &.router-link-active {
+      @apply bg-secondary text-white rounded-lg;
+    }
+
+    &::hover {
+      @apply bg-secondary text-white rounded-lg;
+    }
+  }
 }
 </style>

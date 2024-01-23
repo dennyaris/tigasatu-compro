@@ -27,7 +27,7 @@
                 {{ featuredTestimonial.author.name }}
               </div>
               <div class="text-gray-600">
-                {{ `@${featuredTestimonial.author.handle}` }}
+                {{ `${featuredTestimonial.author.handle}` }}
               </div>
             </div>
             <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="">
@@ -40,7 +40,7 @@
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="">
                 <div>
-                  <div class="font-semibold">
+                  <div class="font-semibold leading-tight mb-1.5">
                     {{ testimonial.author.name }}
                   </div>
                   <div class="text-sm text-gray-600 leading-tight">
@@ -58,10 +58,10 @@
 
 <script setup>
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: 'Synsiro Pro: "Good deliverability, clear marker, max post dilatation"',
   author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
+    name: 'Dr. Muhammad Andi Yassiin, Sp.JP',
+    handle: 'RS Jakarta Heart Center',
     imageUrl:
       '/images/peoples/anonymous.png',
     logoUrl: '/images/clients/mayapada-hospital.png'
@@ -71,76 +71,56 @@ const testimonials = [
   [
     [
       {
-        body: 'Jauh lebih nyaman daripada suntik biasa. Insulin yang setiap beberapa menit masuk ke dalam tubuh saya membuat gula darah saya menjadi lebih stabil.',
+        body: 'Orsiro Mission: "Ok, Good"',
         author: {
-          name: 'Tasya, 34 Tahun',
-          handle: 'DM1 sejak 11 tahun',
+          name: 'Dr. Todung Donald Aposan Silalahi, Sp.PD-KKV',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
       },
       {
-        body: 'The Insulin Pump has been a game-changer in managing my diabetes. Its precise control over insulin delivery has helped me maintain my blood sugar levels consistently.',
+        body: 'Orsiro Mission: "Good deliverability"',
         author: {
-          name: 'John, 28 Years Old',
-          handle: 'Diabetic Type 1 for 15 years',
+          name: 'Dr. Muhammad Munawar, Sp.JP (K)',
+          handle: 'RS Jantung Binawaluya',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }
-      // {
-      //   body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-      //   author: {
-      //     name: 'Leslie Alexander',
-      //     handle: 'lesliealexander',
-      //     imageUrl:
-      //       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-      //   }
-      // }
     ],
     [
       {
-        body: '<p>Selama pakai pump, selain membantu mengurangi frekuensi suntik, juga membantu mengendalikan gula darah. Ngaa perlu khawatir lagi hipoglikemi Tengah malam atau tinggi di jam setelah sarapan.</p><p>arumnya (cannula) juga meskipun terbuat dari stainless tetapi ngga sakit dan setelah masuk ke kulit tidak berasa. Nyaman untuk dipakai bergerak.</p>',
+        body: 'Synsiro Pro: "Gentle and Good Deliverability"',
         author: {
-          name: 'Sarah, 28 Tahun',
-          handle: 'DM1 sejak 6 tahun',
+          name: 'Dr. Robert Noldy Ngantund, Sp.PD, KKV, FINASIM',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ]
   ],
   [
     [
       {
-        body: '<p>Insulin Pump sangat praktis dan memudahkan keseharian saya dalam beraktivitas, ga perlu rpot dan bingung suntuk di tempat umum.</p><p>Gula darahpun menjadi lebih terkontrol dan 70% berada di range target (80-170 mg/dl). Frekuensi hiperglikemi yang sebelumnya mencapai 30% dalam seminggu sekarang berubah menjadi 11%. Highly recommended!</p>',
+        body: 'Orsiro Mission: "Good Deliverability"',
         author: {
-          name: 'Claudya, 28 Tahun',
-          handle: 'DM1 sejak 21 tahun',
+          name: 'Dr. Wahyu Aditya Soedarsono, Sp.JP',
+          handle: 'RS Jakarta Heart Center',
           imageUrl:
             '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ],
     [
       {
-        body: "I've found a new sense of freedom since I started using the Insulin Pump. No more frequent injections, and I can enjoy my meals without worry.",
+        body: 'Orsiro Mission: "Good Deliverability"',
         author: {
-          name: 'Sarah, 40 Years Old',
-          handle: 'Diagnosed with Type 2 Diabetes',
-          imageUrl: '/images/peoples/anonymous.png'
-        }
-      },
-      {
-        body: "The Insulin Pump has transformed the way I manage my diabetes. It's discreet, efficient, and has reduced the number of times I need to check my blood sugar levels.",
-        author: {
-          name: 'Alex, 50 Years Old',
-          handle: 'Living with Diabetes for 20 years',
+          name: 'Dr. Emanoel Oepangat, Sp.JP, FIHA',
+          handle: 'RS Siloam TB Simatupang',
           imageUrl: '/images/peoples/anonymous.png'
         }
       }
-      // More testimonials...
     ]
   ]
 ]

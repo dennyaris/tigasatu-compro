@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Menu, MenuButton, MenuItems } from '@headlessui/vue'
+import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 const { locale } = useI18n()
 const localePath = useLocalePath()
 </script>
@@ -8,7 +8,7 @@ const localePath = useLocalePath()
   <Menu as="li" class="relative inline-block text-left">
     <div class="dropdown-btn px-2 py-1.5" :class="{'active': $route.matched.some(({ path }) => path.startsWith('/solution'))}">
       <MenuButton
-        class="flex items-center font-semibold tracking-wide hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/75"
+        class="flex items-center font-semibold tracking-wide focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/75"
       >
         {{ $t('menu.solution') }}
         <i
@@ -29,8 +29,8 @@ const localePath = useLocalePath()
       <MenuItems
         class="px-4 py-8 absolute right-0 mt-2 w-140 origin-top-right divide-y divide-gray-100 rounded-2xl bg-white shadow-lg ring-1 ring-black/5 focus:outline-none"
       >
-        <div class="flex flex-col gap-y-4">
-          <NuxtLink v-for="(item, idx) in $tm('home.solution.items')" :key="idx" :to="localePath($rt(item.to), locale)" class="flex hover:bg-blue-light rounded-lg px-2 py-3">
+        <MenuItem v-slot="{ close }" as="div" class="flex flex-col gap-y-4">
+          <NuxtLink v-for="(item, idx) in $tm('home.solution.items')" :key="idx" :to="localePath($rt(item.to), locale)" class="flex hover:bg-blue-light rounded-lg px-2 py-3" @click="close">
             <img class="w-14 h-14 shrink-0" :src="$rt(item.image)" :alt="$rt(item.title)">
             <div class="grow pl-3">
               <p v-if="locale === 'en'" class="text-lg font-bold mb-1">
@@ -46,13 +46,21 @@ const localePath = useLocalePath()
               </p>
             </div>
           </NuxtLink>
-        </div>
+        </MenuItem>
       </MenuItems>
     </transition>
   </Menu>
 </template>
-<style>
+<style lang="postcss">
 .dropdown-btn.active {
   @apply bg-primary text-white rounded-lg;
+
+  &:hover {
+    @apply !text-white;
+  }
+}
+
+.dropdown-btn:not(.active) {
+  @apply hover:text-secondary;
 }
 </style>
