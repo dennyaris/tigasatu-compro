@@ -1,9 +1,12 @@
 {
   "recommendations": [
+    "antfu.goto-alias",
     "antfu.unocss",
+    "christian-kohler.path-intellisense",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "lokalise.i18n-ally",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
-    "dbaeumer.vscode-eslint",
-    "christian-kohler.path-intellisense"
   ],
 }
