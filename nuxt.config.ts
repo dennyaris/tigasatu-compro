@@ -1,3 +1,4 @@
+import { execaSync } from 'execa'
 import { transformerDirectives } from 'unocss'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -28,7 +29,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      version: process.env.TAG_VERSION || '0.0.0'
+      version: process.env.TAG_VERSION || '0.0.0',
+      buildTime: Date.now(),
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim()
     }
   },
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
@@ -38,9 +41,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
+    '@nuxtjs/seo',
     '@nuxtjs/google-fonts',
     'nuxt-swiper',
-    'nuxt-simple-sitemap',
     'nuxt-gtag'
   ],
   gtag: {
@@ -95,14 +98,5 @@ export default defineNuxtConfig({
     plugins: {
       'postcss-nested': {}
     }
-  },
-  nitro: {
-    output: process.env.APP_ENV === 'production'
-      ? {
-          dir: '.prod',
-          serverDir: '.prod/server',
-          publicDir: '.prod/public'
-        }
-      : undefined
   }
 })
