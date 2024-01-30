@@ -1,6 +1,18 @@
 <script setup lang="ts">
+import type { CareerParsedContent } from '~/types/career'
 const { locale } = useI18n()
 const localePath = useLocalePath()
+
+const { data, refresh } = await useAsyncData(
+  'jobs',
+  () => {
+    let query = queryContent<CareerParsedContent>('career').locale(locale.value).where({ _draft: false }).limit(3)
+    return query.find()
+  },
+  {
+    deep: false
+  }
+)
 </script>
 <template>
   <section class="py-24" :class="[$attrs.class]">
@@ -20,16 +32,16 @@ const localePath = useLocalePath()
             Job openings
           </h3>
           <ul class="-my-8 divide-y divide-gray-100">
-            <li v-for="(job, idx) in $tm('vacancies.jobs')" :key="idx" class="py-8">
+            <li v-for="(job, idx) in data" :key="idx" class="py-8">
               <dl class="relative flex flex-col flex-wrap gap-x-3">
                 <div>
                   <dt class="sr-only">
                     Role
                   </dt>
                   <dd class="w-full flex-none text-2xl font-semibold tracking-tight text-gray-900">
-                    <a href="#">
-                      {{ $rt(job.title) }}
-                    </a>
+                    <NuxtLink :to="localePath(job._path as string, locale)">
+                      {{ job.title }}
+                    </NuxtLink>
                   </dd>
                 </div>
                 <div class="flex-inline items-center mt-3">
@@ -39,7 +51,7 @@ const localePath = useLocalePath()
                   </dt>
                   <dd class="text-base font-medium">
                     <a href="#">
-                      {{ $rt(job.location) }}
+                      {{ job.jobLocation }}
                     </a>
                   </dd>
                 </div>
@@ -49,7 +61,7 @@ const localePath = useLocalePath()
                     Type
                   </dt>
                   <dd>
-                    <span class="label capitalize bg-primary">{{ $rt(job.workPlace) }}</span> &bull; <span class="label capitalize bg-secondary">Full-time</span>
+                    <span class="label capitalize bg-primary">{{ job.jobLocationType }}</span> &bull; <span class="label capitalize bg-secondary">{{ job.employmentType }}</span>
                   </dd>
                 </div>
                 <div class="mt-3">
@@ -57,7 +69,7 @@ const localePath = useLocalePath()
                     Description
                   </dt>
                   <ExpandableText :max-lines="3" class="mt-2 w-full flex-none  text-gray-600">
-                    {{ $rt(job.overview) }}
+                    {{ job.description }}
                   </ExpandableText>
                 </div>
               </dl>

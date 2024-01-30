@@ -28,7 +28,7 @@
                 How to Apply
               </h2>
               <p>
-                Please send your CV by email to <a href="mailto:info@tigasatumedika.com" class="text-primary font-semibold">info@tigasatumedika.com</a>
+                Please send your CV by email to <a href="mailto:andrie.johandry@tigasatumedika.com" class="text-primary font-semibold">andrie.johandry@tigasatumedika.com</a>
               </p>
               <p class="mt-6 font-bold">
                 Subject:

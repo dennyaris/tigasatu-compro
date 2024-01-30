@@ -209,7 +209,7 @@ watchDebounced(
 const { data, refresh } = await useAsyncData(
   'jobs',
   () => {
-    let query = queryContent<CareerParsedContent>('career').locale(locale.value)
+    let query = queryContent<CareerParsedContent>('career').locale(locale.value).where({ _draft: false })
 
     if (title.value.trim() !== '') {
       const pattern = new RegExp('\\b' + title.value.split(' ').join('\\b.*\\b'), 'i')

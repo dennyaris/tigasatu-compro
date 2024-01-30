@@ -3,6 +3,7 @@ title: "Sales Executive ID"
 employmentType: "full-time"
 employmentUnit: "dental"
 jobLocation: "Tangerang, Indonesia"
+_draft: true
 ---
 
 ## Job Description

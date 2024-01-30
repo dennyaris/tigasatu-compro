@@ -4,6 +4,7 @@ employmentType: "contract"
 employmentUnit: "technology"
 jobLocation: "Tangerang, Indonesia"
 jobLocationType: "remote"
+_draft: true
 ---
 
 ## Job Description
