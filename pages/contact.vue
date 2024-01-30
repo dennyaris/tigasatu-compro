@@ -1,10 +1,32 @@
 <script setup lang="ts">
+import { FetchError } from 'ofetch'
+import type { ValidationError } from '~/types/error'
+
 const { t } = useI18n()
 
 const contactLabelClass = 'block text-base lg:text-lg font-medium leading-6 text-gray-900'
 
 const mapSection = ref(null)
 const mapIsVisible = ref(false)
+const disableSubmitButton = ref(false)
+const config = useRuntimeConfig()
+const inputError = ref<ValidationError>({})
+const response = ref<{ message: string } | null>(null)
+
+const { hasError, firstError } = useValidationError(inputError)
+const defaultData = {
+  first_name: '',
+  last_name: '',
+  company: '',
+  email: '',
+  comment: ''
+}
+const data = reactive({ ...defaultData })
+
+const resetForm = () => {
+  Object.assign(data, defaultData)
+  inputError.value = {}
+}
 
 useIntersectionObserver(mapSection, ([{ isIntersecting }]) => {
   setVisibleOnce(isIntersecting)
@@ -20,6 +42,36 @@ useSeoMeta({
   title: t('contact.title'),
   description: t('contact.description')
 })
+
+const handleSubmit = async () => {
+  response.value = null
+  disableSubmitButton.value = true
+
+  try {
+    const res = await $fetch<{ message: string}>('email/contact', {
+      baseURL: config.public.apiBaseUrl,
+      headers: {
+        Accept: 'application/json'
+      },
+      method: 'POST',
+      body: data
+    })
+    response.value = {
+      message: res.message
+    }
+    resetForm()
+  } catch (error) {
+    if (error instanceof FetchError) {
+      if (error.response?.status === 422) {
+        inputError.value = error.response._data?.errors || {}
+      }
+    } else {
+      console.error(error)
+    }
+  } finally {
+    disableSubmitButton.value = false
+  }
+}
 </script>
 
 <template>
@@ -79,37 +131,84 @@ useSeoMeta({
         <div class="py-20 px-10 grow">
           <form class=" grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div class="sm:col-span-3">
-              <label for="first-name" :class="contactLabelClass">First name</label>
+              <label for="first_name" :class="contactLabelClass">First name</label>
               <div class="mt-2">
-                <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="form-input">
+                <input
+                  id="first_name"
+                  v-model="data.first_name"
+                  type="text"
+                  name="first_name"
+                  autocomplete="given-name"
+                  class="form-input"
+                  required
+                >
+                <InputErrorInfo :show="hasError('first_name')" :text="firstError('first_name')" />
               </div>
             </div>
             <div class="sm:col-span-3">
               <label for="last-name" :class="contactLabelClass">Last name</label>
               <div class="mt-2">
-                <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="form-input">
+                <input
+                  id="last-name"
+                  v-model="data.last_name"
+                  type="text"
+                  name="last-name"
+                  autocomplete="family-name"
+                  class="form-input"
+                  required
+                >
+                <InputErrorInfo :show="hasError('last_name')" :text="firstError('last_name')" />
               </div>
             </div>
             <div class="sm:col-span-6">
               <label for="company" :class="contactLabelClass">Company / Organization</label>
               <div class="mt-2">
-                <input id="company" type="text" name="company" autocomplete="organization" class="form-input">
+                <input
+                  id="company"
+                  v-model="data.company"
+                  type="text"
+                  name="company"
+                  autocomplete="organization"
+                  class="form-input"
+                  required
+                >
+                <InputErrorInfo :show="hasError('company')" :text="firstError('company')" />
               </div>
             </div>
             <div class="sm:col-span-4">
               <label for="email" :class="contactLabelClass">Email address</label>
               <div class="mt-2">
-                <input id="email" name="email" type="email" autocomplete="email" class="form-input">
+                <input
+                  id="email"
+                  v-model="data.email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  class="form-input"
+                  required
+                >
+                <InputErrorInfo :show="hasError('email')" :text="firstError('email')" />
               </div>
             </div>
             <div class="sm:col-span-6">
               <label for="comment" :class="contactLabelClass">Add your comment</label>
               <div class="mt-2">
-                <textarea id="comment" rows="4" name="comment" class="form-input" />
+                <textarea
+                  id="comment"
+                  v-model="data.comment"
+                  rows="4"
+                  name="comment"
+                  class="form-input"
+                  required
+                />
+                <InputErrorInfo :show="hasError('comment')" :text="firstError('comment')" />
               </div>
             </div>
             <div class="sm:col-span-6">
-              <button type="submit" class="inline-flex items-center justify-center w-full rounded-md border border-transparent py-2 px-4 text-base leading-6 font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:border-primary-dark focus:shadow-outline-primary transition duration-150 ease-in-out">
+              <p v-if="response" class="text-success text-base mb-2 tracking-wide">
+                {{ response.message }}
+              </p>
+              <button :disabled="disableSubmitButton" class="inline-flex items-center justify-center w-full rounded-md border border-transparent py-2 px-4 text-base leading-6 font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:border-primary-dark focus:shadow-outline-primary transition duration-150 ease-in-out" @click.prevent="handleSubmit">
                 Send Message
               </button>
             </div>
@@ -128,5 +227,7 @@ useSeoMeta({
   </section>
 </template>
 <style>
-
+button:disabled {
+  @apply !bg-opacity-50 cursor-not-allowed;
+}
 </style>
