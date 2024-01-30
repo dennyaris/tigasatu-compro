@@ -61,7 +61,11 @@ export default defineConfig({
       label: 'text-sm px-1.5 py-0.5 rounded leading-none font-medium bg-gray-600 text-white',
       'text-heading': 'text-4xl lg:text-5xl font-bold',
       'text-subheading': 'text-2xl lg:text-3xl font-bold',
-      'text-subtitle': 'text-lg lg:text-xl'
+      'text-subtitle': 'text-lg lg:text-xl',
+      'text-danger': 'text-red-600',
+      'text-success': 'text-green-600',
+      'text-warning': 'text-yellow-600',
+      'text-info': 'text-blue-600'
     },
     [/^(flex|grid)-center/g, () => 'justify-center items-center']
   ]

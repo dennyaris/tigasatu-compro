@@ -31,7 +31,8 @@ export default defineNuxtConfig({
     public: {
       version: process.env.TAG_VERSION || '0.0.0',
       buildTime: Date.now(),
-      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim()
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
+      apiBaseUrl: process.env.API_BASE_URL || 'http://localhost'
     }
   },
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
