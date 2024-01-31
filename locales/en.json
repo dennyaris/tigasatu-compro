@@ -21,7 +21,7 @@
         {
           "to": "/solution/cardio",
           "image": "/images/solution-cardio.png",
-          "title": "Cardio",
+          "title": "Cardiology",
           "subtitle": "Distributing major Western brands in Intervention Cardiology and Electrophysiology solutions requiring deep technical know-how / professional applicants 24/7."
         },
         {
@@ -190,6 +190,8 @@
         "bio": "MBA, INSEAD. Prior experiences include Director at Delhaize Group, Chief Executive Officer at MAP, Chief Operating Officer at Bhinneka, and Engagement Manager at McKinsey & Co."
       }
     ],
+    "people_title": "Our Team",
+    "people_subtitle": "We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.",
     "peoples": [
       {
         "name": "Abelio Ravly",
@@ -327,6 +329,13 @@
     },
     "products": [
       {
+        "name": "Orsiro® Mission DES",
+        "subtitle": "Thinnest Drug-Eluting Stent System Offering Enhanced Deliverability",
+        "description": "Orsiro® Mission is a new drug-eluting stent system that offers advanced deliverability and an ultrathin strut design considered the thinnest available in the United States. It features the same proprietary design and innovative bioabsorbable coating with controlled drug release as the Orsiro stent. Improvements to the new Orsiro Mission DES system include a re-engineered delivery system and a new deep embedding process to improve deliverability further, including ‘best in class’ trackability and crossability",
+        "image": "/products/orsiro-mission.jpeg",
+        "brochure": "https://us.orsiro.com/sites/default/files/2021-09/Orsiro_Mission_Brochure_463589_Rev_A_BINC_EN_Jun_2021_DV.pdf"
+      },
+      {
         "name": "Pantera® Pro",
         "subtitle": "Semi-Compliant Workhorse Balloon",
         "description": "Indicated for dilatation of coronary artery or bypass graft stenosis.* Challenging lesions require a versatile workhorse balloon. Whether it's a tight lesion or a complex bifurcation, Pantera Pro offers the performance to reach, cross and dilate. *Indication: For balloon dilatation of the stenotic portion of a coronary artery or bypass graft stenosis for the purpose of improving myocardial perfusion.",
@@ -346,13 +355,6 @@
         "description": "Indicated for in-stent restenosis, de novo lesions, small vessels and acute occlusions. Expand your universe of treatment options with this clinically proven solution. Using the highly biocompatible BTHC excipient, Pantera® Lux® effectively delivers a proven antiproliferative drug to the lesion site – without leaving an implant behind.",
         "image": "/products/pantera-lux.jpeg",
         "brochure": "https://biotronik.cdn.mediamid.com/cdn_bio_doc/bio28417/38545/bio28417.pdf"
-      },
-      {
-        "name": "Orsiro® Mission DES",
-        "subtitle": "Thinnest Drug-Eluting Stent System Offering Enhanced Deliverability",
-        "description": "Orsiro® Mission is a new drug-eluting stent system that offers advanced deliverability and an ultrathin strut design considered the thinnest available in the United States. It features the same proprietary design and innovative bioabsorbable coating with controlled drug release as the Orsiro stent. Improvements to the new Orsiro Mission DES system include a re-engineered delivery system and a new deep embedding process to improve deliverability further, including ‘best in class’ trackability and crossability",
-        "image": "/products/orsiro-mission.jpeg",
-        "brochure": "https://us.orsiro.com/sites/default/files/2021-09/Orsiro_Mission_Brochure_463589_Rev_A_BINC_EN_Jun_2021_DV.pdf"
       },
       {
         "name": "PK Papyrus®",
@@ -424,6 +426,16 @@
         "description": "Reliable and secure packaging and delivery services. We ensure your diabetes care products are delivered swiftly and safely, maintaining the highest standards of care from our facility to your doorstep.",
         "image": "/images/delivery.png"
       }
-    ] 
+    ]
+  },
+  "dental": {
+    "title": "Dental Care Technology Solutions for Better Patient Outcomes",
+    "description": "Discover the latest in dental care technology at Tigasatu Medika Pratama. Our solutions are designed to improve patient outcomes and quality of life."
+  },
+  "solution": {
+    "subtitle": "Featured Products",
+    "title": "Your Partner in Advanced Medical Solutions",
+    "description": "At Tigasatu Medika Pratama, we're committed to providing innovative medical products that enhance patient care and improve outcomes. Explore our range of featured products and discover how we're making a difference in healthcare. For more information, please",
+    "contact_btn": "Contact Us"
   }
 }

@@ -27,7 +27,7 @@ useHead({
     return titleChunk ? `${titleChunk} | Tigasatu Medika Pratama` : 'Tigasatu Medika Pratama'
   },
   htmlAttrs: {
-    lang: () => locObj.value?.iso
+    lang: () => (typeof locObj.value !== 'string') ? locObj.value?.iso : locObj.value
   },
   meta: [
     {

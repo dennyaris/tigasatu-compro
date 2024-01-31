@@ -20,17 +20,19 @@
           <blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
             <p>{{ `“${featuredTestimonial.body}”` }}</p>
           </blockquote>
-          <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-            <img class="h-10 w-10 flex-none rounded-full bg-gray-50" :src="featuredTestimonial.author.imageUrl" alt="">
-            <div class="flex-auto">
-              <div class="font-semibold">
-                {{ featuredTestimonial.author.name }}
-              </div>
-              <div class="text-gray-600">
-                {{ `@${featuredTestimonial.author.handle}` }}
+          <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 sm:flex-nowrap">
+            <div class="px-6 py-4 flex flex-auto">
+              <img class="h-10 w-10 flex-none rounded-full bg-gray-50" :src="featuredTestimonial.author.imageUrl" alt="">
+              <div class="flex-auto pl-4">
+                <div class="font-semibold">
+                  {{ featuredTestimonial.author.name }}
+                </div>
+                <div class="text-gray-600">
+                  {{ `${featuredTestimonial.author.handle}` }}
+                </div>
               </div>
             </div>
-            <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="">
+            <img class="h-14 pr-6 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="">
           </figcaption>
         </figure>
         <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
@@ -58,13 +60,13 @@
 
 <script setup>
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: 'Jangan surut dan pantang mundur, terus konsisten dalam pendistribusian teknologi diabetes dan lakukan yang bisa dilakukan untuk pasien diabetes untuk negri dan bangsa ini.',
   author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
+    name: 'Dr. Roy Panusunan Sibarani, Sp.PD-KEMD',
+    handle: 'RS EMC Sentul',
     imageUrl:
       '/images/peoples/anonymous.png',
-    logoUrl: '/images/clients/mayapada-hospital.png'
+    logoUrl: '/images/clients/emc-sentul.jpg'
   }
 }
 const testimonials = [

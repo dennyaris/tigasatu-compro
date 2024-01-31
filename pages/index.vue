@@ -124,7 +124,7 @@ const setThumbsSwiper = (swiper) => {
               <span class="text-subheading">{{ $t('home.solution.solution') }}</span>
             </h3>
             <h3 v-else class="text-[#123049] text-3xl font-black">
-              <span class="text-subheading">{{ $t('home.solution.solution') }}</span>
+              <span class="text-subheading text-primary">{{ $t('home.solution.solution') }}</span>
               {{ $rt(item.title) }}
             </h3>
           </div>

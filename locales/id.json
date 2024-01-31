@@ -21,7 +21,7 @@
         {
           "to": "/solution/cardio",
           "image": "/images/solution-cardio.png",
-          "title": "Kardio",
+          "title": "Kardiologi",
           "subtitle": "Mendistribusikan merek besar Barat dalam solusi Kardiologi Intervensi dan Elektrofisiologi yang memerlukan pengetahuan teknis mendalam / pelamar profesional 24/7."
         },
         {
@@ -190,6 +190,8 @@
         "bio": "MBA, INSEAD. Pengalaman sebelumnya termasuk Direktur di Delhaize Group, Chief Executive Officer di MAP, Chief Operating Officer di Bhinneka, dan Engagement Manager di McKinsey &Co."
       }
     ],
+    "people_title": "Tim Kami",
+    "people_subtitle": "Tim kami merupakan orang-orang dinamis yang bersemangat dengan apa yang kami lakukan dan berdedikasi untuk memberikan hasil terbaik bagi klien kami.",
     "peoples": [
       {
         "name": "Abelio Ravly",
@@ -327,6 +329,13 @@
     },
     "products": [
       {
+        "name": "Orsiro® Mission DES",
+        "subtitle": "Thinnest Drug-Eluting Stent System Offering Enhanced Deliverability",
+        "description": "Orsiro® Mission is a new drug-eluting stent system that offers advanced deliverability and an ultrathin strut design considered the thinnest available in the United States. It features the same proprietary design and innovative bioabsorbable coating with controlled drug release as the Orsiro stent. Improvements to the new Orsiro Mission DES system include a re-engineered delivery system and a new deep embedding process to improve deliverability further, including ‘best in class’ trackability and crossability",
+        "image": "/products/orsiro-mission.jpeg",
+        "brochure": "https://us.orsiro.com/sites/default/files/2021-09/Orsiro_Mission_Brochure_463589_Rev_A_BINC_EN_Jun_2021_DV.pdf"
+      },
+      {
         "name": "Pantera® Pro",
         "subtitle": "Semi-Compliant Workhorse Balloon",
         "description": "Indicated for dilatation of coronary artery or bypass graft stenosis.* Challenging lesions require a versatile workhorse balloon. Whether it's a tight lesion or a complex bifurcation, Pantera Pro offers the performance to reach, cross and dilate. *Indication: For balloon dilatation of the stenotic portion of a coronary artery or bypass graft stenosis for the purpose of improving myocardial perfusion.",
@@ -346,13 +355,6 @@
         "description": "Indicated for in-stent restenosis, de novo lesions, small vessels and acute occlusions. Expand your universe of treatment options with this clinically proven solution. Using the highly biocompatible BTHC excipient, Pantera® Lux® effectively delivers a proven antiproliferative drug to the lesion site – without leaving an implant behind.",
         "image": "/products/pantera-lux.jpeg",
         "brochure": "https://biotronik.cdn.mediamid.com/cdn_bio_doc/bio28417/38545/bio28417.pdf"
-      },
-      {
-        "name": "Orsiro® Mission DES",
-        "subtitle": "Thinnest Drug-Eluting Stent System Offering Enhanced Deliverability",
-        "description": "Orsiro® Mission is a new drug-eluting stent system that offers advanced deliverability and an ultrathin strut design considered the thinnest available in the United States. It features the same proprietary design and innovative bioabsorbable coating with controlled drug release as the Orsiro stent. Improvements to the new Orsiro Mission DES system include a re-engineered delivery system and a new deep embedding process to improve deliverability further, including ‘best in class’ trackability and crossability",
-        "image": "/products/orsiro-mission.jpeg",
-        "brochure": "https://us.orsiro.com/sites/default/files/2021-09/Orsiro_Mission_Brochure_463589_Rev_A_BINC_EN_Jun_2021_DV.pdf"
       },
       {
         "name": "PK Papyrus®",
@@ -426,5 +428,15 @@
       }
     ]
     
+  },
+  "dental": {
+    "title": "Solusi Teknologi Perawatan Diabetes untuk Hasil Pasien yang Lebih Baik",
+    "description": "Temukan teknologi perawatan diabetes terkini di Tigasatu Medika Pratama. Solusi kami dirancang untuk meningkatkan hasil dan kualitas hidup pasien."
+  },
+  "solution": {
+    "subtitle": "Produk Pilihan",
+    "title": "Mitra Anda dalam Solusi Medis Tingkat Lanjut",
+    "description": "Di Tigasatu Medika Pratama, kami berkomitmen untuk menyediakan produk medis inovatif yang meningkatkan perawatan pasien dan meningkatkan hasil. Jelajahi rangkaian produk unggulan kami dan temukan bagaimana kami membuat perbedaan dalam layanan kesehatan. Untuk informasi lebih lanjut, silakan",
+    "contact_btn": "Hubungi Kami"
   }
 }
