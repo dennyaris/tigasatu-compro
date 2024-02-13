@@ -60,8 +60,8 @@ const handleSubmit = async () => {
     response.value = {
       message: res.message
     }
-    resetForm()
     gtag('event', 'contact_form', data)
+    resetForm()
   } catch (error) {
     if (error instanceof FetchError) {
       if (error.response?.status === 422) {
