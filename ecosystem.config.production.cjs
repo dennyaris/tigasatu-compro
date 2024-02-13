@@ -9,7 +9,8 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
         BASE_URL: 'https://tigasatumedika.com',
-        GTAG_ID: 'G-HCZC0XKVF9'
+        GTAG_ID: 'G-HCZC0XKVF9',
+        NUXT_PUBLIC_API_BASE_URL: 'https://dash.tigasatu.id/api/v1/'
       }
     }
   ]

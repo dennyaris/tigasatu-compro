@@ -3,6 +3,7 @@ import { FetchError } from 'ofetch'
 import type { ValidationError } from '~/types/error'
 
 const { t } = useI18n()
+const { gtag } = useGtag()
 
 const contactLabelClass = 'block text-base lg:text-lg font-medium leading-6 text-gray-900'
 
@@ -60,6 +61,7 @@ const handleSubmit = async () => {
       message: res.message
     }
     resetForm()
+    gtag('event', 'contact_form', data)
   } catch (error) {
     if (error instanceof FetchError) {
       if (error.response?.status === 422) {
