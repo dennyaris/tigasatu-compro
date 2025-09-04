@@ -61,7 +61,7 @@ export default defineNuxtConfig({
     autoLastmod: false
   },
   i18n: {
-    debug: false,
+    debug: true,
     compilation: {
       strictMessage: false
     },
@@ -72,7 +72,8 @@ export default defineNuxtConfig({
       { code: 'id', iso: 'id-ID', file: 'id.json' }
     ],
     lazy: false,
-    langDir: 'locales/'
+    langDir: 'locales/',
+    detectBrowserLanguage: false // Nonaktifkan deteksi bahasa browser untuk menghindari konflik
   },
   swiper: {
     modules: ['pagination', 'autoplay', 'free-mode', 'thumbs', 'navigation']

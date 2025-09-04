@@ -168,7 +168,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
           </NuxtLink>
         </div>
         <div class="flex justify-center items-center justify-end mt-4 sm:mt-0 text-sm md:text-base">
-          <p>&copy; {{ new Date().getFullYear() }} PT Tigasatu Medika Pratama</p>
+          <p>&copy; 2024 PT Tigasatu Medika Pratama</p>
         </div>
       </div>
     </div>

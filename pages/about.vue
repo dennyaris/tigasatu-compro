@@ -10,7 +10,7 @@ useSeoMeta({
     <AboutHero />
     <AboutCoreValues />
     <AboutTimeline />
-    <AboutFaq />
+    <!-- <AboutFaq /> -->
   </div>
 </template>
 <style>
