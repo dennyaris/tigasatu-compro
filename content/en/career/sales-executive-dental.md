@@ -5,7 +5,7 @@ employmentType: "full-time"
 employmentUnit: "dental"
 jobLocation: "Tangerang, Indonesia"
 jobLocationType: "on-site"
-_draft: true
+# _draft: true
 ---
 
 ## Job Description

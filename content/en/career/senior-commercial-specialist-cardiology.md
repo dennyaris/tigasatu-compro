@@ -5,6 +5,7 @@ employmentType: "full-time"
 employmentUnit: "cardio"
 jobLocation: "Karawaci, Tangerang, Indonesia"
 jobLocationType: "on-site"
+_draft: true
 ---
 
 ## Qualification:

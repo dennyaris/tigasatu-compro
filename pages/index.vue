@@ -208,7 +208,7 @@ const setThumbsSwiper = (swiper) => {
       </div>
     </div>
   </section>
-  <AboutFaq :show-contact-btn="false" />
+  <!-- <AboutFaq :show-contact-btn="false" /> -->
   <SectionFeaturedVacancies class="lg:pb-60 bg-slate-50" />
 </template>
 <style lang="postcss" scoped>

@@ -6,7 +6,7 @@ const localePath = useLocalePath()
 const { data, refresh } = await useAsyncData(
   'jobs',
   () => {
-    let query = queryContent<CareerParsedContent>('career').locale(locale.value).where({ _draft: false }).limit(3)
+    const query = queryContent<CareerParsedContent>('career').locale(locale.value).where({ _draft: false }).limit(3)
     return query.find()
   },
   {
@@ -68,7 +68,7 @@ const { data, refresh } = await useAsyncData(
                   <dt class="sr-only">
                     Description
                   </dt>
-                  <ExpandableText :max-lines="3" class="mt-2 w-full flex-none  text-gray-600">
+                  <ExpandableText :max-lines="3" class="mt-2 w-full flex-none text-gray-600">
                     {{ job.description }}
                   </ExpandableText>
                 </div>
