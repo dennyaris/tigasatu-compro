@@ -71,7 +71,6 @@ export default defineNuxtConfig({
       { code: 'en', iso: 'en-US', file: 'en.json' },
       { code: 'id', iso: 'id-ID', file: 'id.json' }
     ],
-    lazy: false,
     langDir: 'locales/',
     detectBrowserLanguage: false // Nonaktifkan deteksi bahasa browser untuk menghindari konflik
   },
