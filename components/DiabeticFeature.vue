@@ -36,27 +36,6 @@
 </template>
 
 <script setup>
-const features = [
-  {
-    name: 'After Sales Service',
-    description:
-      'Our dedicated insulin pump support team is always ready to visit in case of any issues with your insulin pump. We provide comprehensive assistance, troubleshooting, and guidance to ensure your device functions optimally for effective diabetes management.',
-    image: '/images/technical-support.png'
-  },
-  {
-    name: 'WhatsApp Call Center',
-    description:
-      'Accessible call center services for any inquiries or concerns. Contact us via WhatsApp for prompt and personalized assistance with your diabetes care questions, product information, or any other support you might need.',
-    image: '/images/customer-service.png'
-  },
-  {
-    name: 'Fast Delivery',
-    description:
-      'Reliable and secure packaging and delivery services. We ensure your diabetes care products are delivered swiftly and safely, maintaining the highest standards of care from our facility to your doorstep.',
-    image: '/images/delivery.png'
-  }
-]
-
 // const features = [
 //   {
 //     name: 'After Sales Service',
