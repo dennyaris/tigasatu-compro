@@ -3,7 +3,7 @@ import type { CareerParsedContent } from '~/types/career'
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
-const { data, refresh } = await useAsyncData(
+const { data } = await useAsyncData(
   'jobs',
   () => {
     const query = queryContent<CareerParsedContent>('career').locale(locale.value).where({ _draft: false }).limit(3)

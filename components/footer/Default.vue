@@ -94,7 +94,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
                       Email
                     </p>
                     <p class="font-semibold">
-                      info@tigasatumedika.com
+                      <a href="mailto:info@tigasatumedika.com">info@tigasatumedika.com</a>
                     </p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
                       Phone
                     </p>
                     <p class="font-semibold">
-                      (+62) 21 5575 8298
+                      <a href="tel:02155758298">(+62) 21 5575 8298</a>
                     </p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const btnCTAClass = 'inline-block border-2 border-secondary py-2 px-8 rounded-fu
                       Whatsapp
                     </p>
                     <p class="font-semibold">
-                      (+62) 898 120 3131
+                      <a href="https://api.whatsapp.com/send?phone=628981203131&text=Hai, saya tertarik dengan produk yang anda. Bisakah Anda memberi saya rincian lebih lanjut?" target="_blank">(+62) 898 120 3131</a>
                     </p>
                   </div>
                 </div>
